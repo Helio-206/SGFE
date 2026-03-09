@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('transacoes_despesas', function (Blueprint $table) {
             $table->id('id_despesa');
-            $table->string('estado', 50);                // ex: Pendente, Aprovada, Rejeitada
+            $table->enum('estado', ['PENDENTE_CABIMENTADA', 'LIQUIDADA_APROVADA', 'PAGA'])
+                ->default('PENDENTE_CABIMENTADA');
             $table->string('descricao', 150);
             $table->decimal('valor_bruto', 15, 2);       // Restrição Crítica: decimal(15,2)
             $table->date('data_registro');

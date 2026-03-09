@@ -15,12 +15,14 @@ use Illuminate\View\View;
  */
 class OrcamentoController extends Controller
 {
+    private const ANO_FISCAL_OGE = 2025;
+
     /**
      * Display a listing of the resource.
      */
     public function index(Request $request): View
     {
-        $anoFiscal = $request->input('ano', date('Y'));
+        $anoFiscal = self::ANO_FISCAL_OGE;
 
         $orcamentos = Orcamento::with(['instituicao', 'usuario'])
             ->where('ano_fiscal', $anoFiscal)
@@ -30,7 +32,7 @@ class OrcamentoController extends Controller
         // Calcular saldos para cada orçamento
         $orcamentos->each(function ($orc) {
             $despesasAprovadas = $orc->instituicao->transacoesDespesas()
-                ->whereIn('estado', ['aprovada', 'executada'])
+                ->whereIn('estado', ['LIQUIDADA_APROVADA', 'PAGA'])
                 ->whereYear('data_registro', $orc->ano_fiscal)
                 ->sum('valor_bruto');
 
@@ -50,7 +52,7 @@ class OrcamentoController extends Controller
      */
     public function create(): View
     {
-        $anoFiscal = date('Y');
+        $anoFiscal = self::ANO_FISCAL_OGE;
         $instituicoes = Instituicao::whereDoesntHave('orcamentos', function ($q) use ($anoFiscal) {
             $q->where('ano_fiscal', $anoFiscal);
         })->orderBy('nome')->get();
@@ -66,8 +68,9 @@ class OrcamentoController extends Controller
         $validated = $request->validate([
             'id_inst'     => 'required|exists:instituicoes,id_inst',
             'valor_total' => 'required|numeric|min:0|max:999999999999.99',
-            'ano_fiscal'  => 'required|integer|min:2020|max:2050',
         ]);
+
+        $validated['ano_fiscal'] = self::ANO_FISCAL_OGE;
 
         // Verificar se já existe orçamento para esta instituição neste ano
         $existe = Orcamento::where('id_inst', $validated['id_inst'])
@@ -101,7 +104,7 @@ class OrcamentoController extends Controller
             ->get()
             ->pluck('total', 'estado');
 
-        $totalExecutado = $despesas->get('aprovada', 0) + $despesas->get('executada', 0);
+        $totalExecutado = $despesas->get('LIQUIDADA_APROVADA', 0) + $despesas->get('PAGA', 0);
         $saldoDisponivel = $orcamento->valor_total - $totalExecutado;
         $percentualExecucao = $orcamento->valor_total > 0 ? ($totalExecutado / $orcamento->valor_total) * 100 : 0;
 
@@ -127,7 +130,7 @@ class OrcamentoController extends Controller
 
         // Verificar se o novo valor não é inferior às despesas já aprovadas
         $despesasAprovadas = $orcamento->instituicao->transacoesDespesas()
-            ->whereIn('estado', ['aprovada', 'executada'])
+            ->whereIn('estado', ['LIQUIDADA_APROVADA', 'PAGA'])
             ->whereYear('data_registro', $orcamento->ano_fiscal)
             ->sum('valor_bruto');
 

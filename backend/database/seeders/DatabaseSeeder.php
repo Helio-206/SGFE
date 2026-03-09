@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             InstituicaoSeeder::class,
             ClassificacaoEconomicaSeeder::class,
+            RubricasOge2025Seeder::class,
             UserSeeder::class,
         ]);
     }

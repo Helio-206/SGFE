@@ -53,7 +53,7 @@ class Instituicao extends Model
     public function orcamento(): HasOne
     {
         return $this->hasOne(Orcamento::class, 'id_inst', 'id_inst')
-                    ->where('ano_fiscal', date('Y'));
+                    ->where('ano_fiscal', 2025);
     }
 
     /**

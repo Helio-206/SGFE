@@ -15,6 +15,22 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    @if(Auth::user()->role === 'gestor' || Auth::user()->role === 'admin')
+                        <x-nav-link :href="route('gestao.tecto.index')" :active="request()->routeIs('gestao.tecto.*')">
+                            {{ __('Tecto') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('gestao.receitas.index')" :active="request()->routeIs('gestao.receitas.*')">
+                            {{ __('Receitas') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('gestao.despesas.index')" :active="request()->routeIs('gestao.despesas.*')">
+                            {{ __('Despesas') }}
+                        </x-nav-link>
+                    @endif
+                    @if(in_array(Auth::user()->role, ['admin', 'gestor', 'auditor']))
+                        <x-nav-link :href="route('relatorios.index')" :active="request()->routeIs('relatorios.*')">
+                            {{ __('Relatórios') }}
+                        </x-nav-link>
+                    @endif
                 </div>
             </div>
 
@@ -70,6 +86,22 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            @if(Auth::user()->role === 'gestor' || Auth::user()->role === 'admin')
+                <x-responsive-nav-link :href="route('gestao.tecto.index')" :active="request()->routeIs('gestao.tecto.*')">
+                    {{ __('Tecto') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('gestao.receitas.index')" :active="request()->routeIs('gestao.receitas.*')">
+                    {{ __('Receitas') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('gestao.despesas.index')" :active="request()->routeIs('gestao.despesas.*')">
+                    {{ __('Despesas') }}
+                </x-responsive-nav-link>
+            @endif
+            @if(in_array(Auth::user()->role, ['admin', 'gestor', 'auditor']))
+                <x-responsive-nav-link :href="route('relatorios.index')" :active="request()->routeIs('relatorios.*')">
+                    {{ __('Relatórios') }}
+                </x-responsive-nav-link>
+            @endif
         </div>
 
         <!-- Responsive Settings Options -->

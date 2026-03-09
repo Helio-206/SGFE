@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\TransacaoDespesa;
 use App\Models\User;
+use App\Observers\TransacaoDespesaObserver;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 
@@ -26,6 +28,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        TransacaoDespesa::observe(TransacaoDespesaObserver::class);
+
         // ── Gates de nível de acesso ────────────────────────
 
         // Admin pode tudo

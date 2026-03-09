@@ -15,6 +15,7 @@ class TransacaoReceita extends Model
 
     protected $fillable = [
         'font_receita',
+        'codigo_rupe',
         'data_registro',
         'valor_arrecadado',
         'id_classe',

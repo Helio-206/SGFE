@@ -10,6 +10,10 @@ class TransacaoDespesa extends Model
 {
     use HasFactory;
 
+    public const ESTADO_PENDENTE_CABIMENTADA = 'PENDENTE_CABIMENTADA';
+    public const ESTADO_LIQUIDADA_APROVADA = 'LIQUIDADA_APROVADA';
+    public const ESTADO_PAGA = 'PAGA';
+
     protected $table = 'transacoes_despesas';
     protected $primaryKey = 'id_despesa';
 
@@ -20,6 +24,7 @@ class TransacaoDespesa extends Model
         'data_registro',
         'id_inst',
         'id_user',
+        'id_classe',
     ];
 
     protected function casts(): array
@@ -31,6 +36,14 @@ class TransacaoDespesa extends Model
     }
 
     // ── Relacionamentos ──────────────────────────────────────
+
+    /**
+     * Classificação económica da despesa.
+     */
+    public function classificacaoEconomica(): BelongsTo
+    {
+        return $this->belongsTo(ClassificacaoEconomica::class, 'id_classe', 'id_classe');
+    }
 
     /**
      * Instituição responsável pela despesa.

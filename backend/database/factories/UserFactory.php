@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Instituicao;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
@@ -24,10 +25,14 @@ class UserFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->name(),
+            'nome' => fake()->name(),
+            'username' => fake()->unique()->userName(),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
+            'role' => 'gestor',
+            'status' => 'ativo',
+            'id_inst' => Instituicao::factory(),
             'remember_token' => Str::random(10),
         ];
     }
@@ -40,5 +45,21 @@ class UserFactory extends Factory
         return $this->state(fn (array $attributes) => [
             'email_verified_at' => null,
         ]);
+    }
+
+    /**
+     * Create an admin user.
+     */
+    public function admin(): static
+    {
+        return $this->state(fn () => ['role' => 'admin']);
+    }
+
+    /**
+     * Create an auditor user.
+     */
+    public function auditor(): static
+    {
+        return $this->state(fn () => ['role' => 'auditor']);
     }
 }

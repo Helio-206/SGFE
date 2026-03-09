@@ -37,14 +37,22 @@ class InstituicaoController extends Controller
      */
     public function store(Request $request)
     {
+        if (! $request->user()?->isAdmin()) {
+            abort(403, 'Apenas ADMIN pode criar instituições.');
+        }
+
         $validated = $request->validate([
             'nome'        => 'required|string|max:150',
             'tipo'        => 'required|string|max:50',
-            'codigo'      => 'required|string|max:20|unique:instituicoes,codigo',
+            'codigo_uo'   => ['required', 'regex:/^\d{4,6}$/', 'unique:instituicoes,codigo'],
             'responsavel' => 'required|string|max:100',
         ], [
-            'codigo.unique' => 'Este código de Unidade Orçamental já está em uso.',
+            'codigo_uo.unique' => 'Este código de Unidade Orçamental já está em uso.',
+            'codigo_uo.regex' => 'O código UO deve conter apenas 4 a 6 dígitos.',
         ]);
+
+        $validated['codigo'] = $validated['codigo_uo'];
+        unset($validated['codigo_uo']);
 
         Instituicao::create($validated);
 
@@ -65,7 +73,7 @@ class InstituicaoController extends Controller
 
         // Calcular estatísticas
         $totalDespesas = $instituicao->transacoesDespesas()
-            ->whereIn('estado', ['aprovada', 'executada'])
+            ->whereIn('estado', ['LIQUIDADA_APROVADA', 'PAGA'])
             ->sum('valor_bruto');
 
         $orcamentoAtual = $instituicao->orcamento; // 1:1 para ano corrente
@@ -86,12 +94,22 @@ class InstituicaoController extends Controller
      */
     public function update(Request $request, Instituicao $instituicao)
     {
+        if (! $request->user()?->isAdmin()) {
+            abort(403, 'Apenas ADMIN pode editar instituições.');
+        }
+
         $validated = $request->validate([
             'nome'        => 'required|string|max:150',
             'tipo'        => 'required|string|max:50',
-            'codigo'      => 'required|string|max:20|unique:instituicoes,codigo,' . $instituicao->id_inst . ',id_inst',
+            'codigo_uo'   => ['required', 'regex:/^\d{4,6}$/', 'unique:instituicoes,codigo,' . $instituicao->id_inst . ',id_inst'],
             'responsavel' => 'required|string|max:100',
+        ], [
+            'codigo_uo.unique' => 'Este código de Unidade Orçamental já está em uso.',
+            'codigo_uo.regex' => 'O código UO deve conter apenas 4 a 6 dígitos.',
         ]);
+
+        $validated['codigo'] = $validated['codigo_uo'];
+        unset($validated['codigo_uo']);
 
         $instituicao->update($validated);
 
