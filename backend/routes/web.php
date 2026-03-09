@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\ClassificacaoEconomicaController;
+use App\Http\Controllers\Admin\InstituicaoController;
+use App\Http\Controllers\Admin\OrcamentoController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,27 +22,29 @@ Route::middleware('auth')->group(function () {
 
 // ── Rotas protegidas por RBAC + Escopo Institucional ──────────
 
-// ADMIN — Gestão de Instituições e Orçamentos globais
+// ADMIN — Gestão de Instituições, Orçamentos e Classificações
 Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->group(function () {
-    Route::get('/instituicoes', function () {
-        return 'Gestão de Instituições (Admin)';
-    })->name('instituicoes.index');
-
-    Route::get('/orcamentos', function () {
-        return 'Tectos Orçamentais Globais (Admin)';
-    })->name('orcamentos.index');
+    // Instituições (UOs)
+    Route::resource('instituicoes', InstituicaoController::class);
+    
+    // Orçamentos / Tectos
+    Route::resource('orcamentos', OrcamentoController::class);
+    
+    // Classificações Económicas
+    Route::resource('classificacoes', ClassificacaoEconomicaController::class)
+        ->except(['show']);
 });
 
 // GESTOR — Receitas e Despesas (filtradas por id_inst)
 Route::middleware(['auth', 'role:admin,gestor', 'escopo.institucional'])->prefix('gestao')->name('gestao.')->group(function () {
     Route::get('/receitas', function () {
-        $user = auth()->user();
+        $user = \Illuminate\Support\Facades\Auth::user();
         $receitas = \App\Models\TransacaoReceita::where('id_inst', $user->id_inst)->get();
         return response()->json($receitas);
     })->name('receitas.index');
 
     Route::get('/despesas', function () {
-        $user = auth()->user();
+        $user = \Illuminate\Support\Facades\Auth::user();
         $despesas = \App\Models\TransacaoDespesa::where('id_inst', $user->id_inst)->get();
         return response()->json($despesas);
     })->name('despesas.index');
