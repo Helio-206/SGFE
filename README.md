@@ -1,10 +1,10 @@
-# Introdução
-A gestão eficiente das finanças públicas é um pilar fundamental para a soberania e transparência da República de Angola. 
-O SGFE surge como uma solução tecnológica para superar os desafios da gestão manual e descentralizada, permitindo um controle rigoroso sobre a execução do Orçamento Geral do Estado (OGE).
+# Introduction
+Efficient management of public finances is a fundamental pillar for the sovereignty and transparency of the Republic of Angola. 
+SGFE emerges as a technological solution to overcome the challenges of manual and decentralized management, allowing strict control over the execution of the General State Budget (OGE).
 
-## Estudo de caso
-O Ministério das Finanças (MINFIN) necessita modernizar a monitorização do OGE. 
-Atualmente, a fragmentação de dados em sistemas isolados dificulta a consolidação da Conta Geral do Estado. 
-O SGFE foca-se na Unidade Orçamental (UO), automatizando as fases da despesa pública (Cabimentação, Liquidação e Pagamento) e integrando a arrecadação via Referência Única de Pagamento ao Estado (RUPE).
+## Case Study
+The Ministry of Finance (MINFIN) needs to modernize the monitoring of the OGE. 
+Currently, the fragmentation of data in isolated systems makes it difficult to consolidate the General State Account. 
+SGFE focuses on the Budget Unit (UO), automating the phases of public expenditure (Commitment, Liquidation, and Payment) and integrating revenue collection through the Single State Payment Reference (RUPE).
 
 
