@@ -1,0 +1,40 @@
+# Automation Log
+
+Registo de atualizacoes automaticas diarias.
+
+## 2026-05-10 00:55:27.261 UTC | run 20260510005527-1466592
+- Quantidade de atualizacoes realizadas: 30
+- Resumo do estado do projeto: Saudavel: projeto consistente e com sinais de manutencao ativa.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 15 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 3 scripts SQL na pasta database.
+  - [x] Foram localizados 3 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/relatorios/RelatorioService.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/auth/AuthCookieService.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/auth/SecurityConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/auth/JwtAuthenticationFilter.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/auth/AuthController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/auth/AuthService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/auth/login-page-client.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/layout/institutional-brand.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
