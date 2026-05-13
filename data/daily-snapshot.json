@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-05-12T05:47:01.591Z",
+  "updatedAt": "2026-05-13T05:56:27.755Z",
   "projectName": "SGFE",
-  "dailyRunId": "20260512054701-2223",
+  "dailyRunId": "20260513055627-2320",
   "totalUpdates": 29,
   "checkedItems": [
     "Repositorio SGFE analisado com consistencia estrutural basica.",
@@ -18,12 +18,12 @@
     "Arquivo critico confirmado: LICENSE.",
     "Arquivo critico confirmado: backend/pom.xml.",
     "Arquivo critico confirmado: frontend/package.json.",
-    "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.",
-    "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.",
-    "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.",
     "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.",
     "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.",
     "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.",
+    "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.",
+    "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.",
+    "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.",
     "Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.",
     "Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.",
     "Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.",
@@ -45,7 +45,7 @@
     "sqlScripts": 2,
     "surefireReports": 0,
     "workflowFiles": 1,
-    "previousSnapshotAt": "2026-05-12T05:47:01.545Z"
+    "previousSnapshotAt": "2026-05-12T05:47:01.591Z"
   },
   "nextActions": [
     "Expandir cobertura de testes unitarios no backend para cenarios criticos.",
