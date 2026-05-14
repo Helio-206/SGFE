@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-05-13T05:56:28.193Z",
+  "updatedAt": "2026-05-14T05:55:11.063Z",
   "projectName": "SGFE",
-  "dailyRunId": "20260513055628-2429",
+  "dailyRunId": "20260514055511-2300",
   "totalUpdates": 29,
   "checkedItems": [
     "Repositorio SGFE analisado com consistencia estrutural basica.",
@@ -18,19 +18,19 @@
     "Arquivo critico confirmado: LICENSE.",
     "Arquivo critico confirmado: backend/pom.xml.",
     "Arquivo critico confirmado: frontend/package.json.",
-    "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.",
-    "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.",
-    "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.",
     "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.",
     "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.",
     "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.",
+    "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.",
+    "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.",
+    "Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.",
     "Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.",
     "Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.",
     "Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.",
-    "Inspecionada pagina frontend: frontend/app/page.tsx.",
     "Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.",
     "Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.",
     "Inspecionada pagina frontend: frontend/app/perfil/page.tsx.",
+    "Inspecionada pagina frontend: frontend/app/page.tsx.",
     "Inspecionada pagina frontend: frontend/app/login/page.tsx.",
     "Inspecionado componente frontend: frontend/components/ui/button.tsx."
   ],
@@ -45,7 +45,7 @@
     "sqlScripts": 2,
     "surefireReports": 0,
     "workflowFiles": 1,
-    "previousSnapshotAt": "2026-05-13T05:56:28.145Z"
+    "previousSnapshotAt": "2026-05-13T05:56:28.193Z"
   },
   "nextActions": [
     "Expandir cobertura de testes unitarios no backend para cenarios criticos.",
