@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-05-14T05:55:11.492Z",
+  "updatedAt": "2026-05-15T06:02:23.354Z",
   "projectName": "SGFE",
-  "dailyRunId": "20260514055511-2411",
+  "dailyRunId": "20260515060223-2328",
   "totalUpdates": 29,
   "checkedItems": [
     "Repositorio SGFE analisado com consistencia estrutural basica.",
@@ -27,10 +27,10 @@
     "Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.",
     "Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.",
     "Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.",
+    "Inspecionada pagina frontend: frontend/app/page.tsx.",
     "Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.",
     "Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.",
     "Inspecionada pagina frontend: frontend/app/perfil/page.tsx.",
-    "Inspecionada pagina frontend: frontend/app/page.tsx.",
     "Inspecionada pagina frontend: frontend/app/login/page.tsx.",
     "Inspecionado componente frontend: frontend/components/ui/button.tsx."
   ],
@@ -45,7 +45,7 @@
     "sqlScripts": 2,
     "surefireReports": 0,
     "workflowFiles": 1,
-    "previousSnapshotAt": "2026-05-14T05:55:11.446Z"
+    "previousSnapshotAt": "2026-05-14T05:55:11.492Z"
   },
   "nextActions": [
     "Expandir cobertura de testes unitarios no backend para cenarios criticos.",
