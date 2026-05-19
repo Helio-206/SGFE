@@ -2,6 +2,7 @@ package ao.gov.minfin.sgfe.common;
 
 import java.time.Clock;
 import java.time.LocalDate;
+import java.time.ZoneId;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -9,7 +10,7 @@ public class FiscalYearService {
     private final Clock clock;
 
     public FiscalYearService() {
-        this.clock = Clock.systemUTC();
+        this.clock = Clock.system(ZoneId.of("Africa/Luanda"));
     }
 
     public int anoCorrente() {

@@ -15,20 +15,20 @@ const actions = [
 export default function AdminPage() {
   return (
     <AppShell title="Dashboard administrativo">
-      <div className="mb-5 grid gap-5 lg:grid-cols-[1.25fr_0.75fr]">
+      <div className="space-y-5">
         <section>
           <div className="mb-4">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-institutional-gold">Nacional</p>
+            <p className="text-xs font-bold uppercase text-institutional-gold">Nacional</p>
             <h2 className="mt-1 text-xl font-bold text-institutional-ink">Visao consolidada</h2>
           </div>
           <DashboardClient />
         </section>
-        <div className="space-y-5">
+        <div className="grid gap-5 xl:grid-cols-[1fr_1fr]">
           <Card>
             <CardHeader>
               <CardTitle>Acessos rapidos</CardTitle>
             </CardHeader>
-            <CardContent className="grid gap-3">
+            <CardContent className="grid gap-3 md:grid-cols-2">
               {actions.map((action) => (
                 <Link key={action.href} href={action.href} className="flex items-center gap-3 rounded-md border border-border p-3 hover:bg-institutional-mist">
                   <action.icon className="h-4 w-4 text-institutional-gold" />

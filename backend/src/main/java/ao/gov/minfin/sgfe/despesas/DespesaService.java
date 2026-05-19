@@ -151,4 +151,28 @@ public class DespesaService {
             throw new AcessoNegadoException("Nao pode operar despesas de outra Unidade Orcamental.");
         }
     }
+
+    @Transactional(readOnly = true)
+    public DespesaDtos.Response obter(Long id, UserPrincipal principal) {
+        TransacaoDespesa despesa = despesas.findById(id)
+            .orElseThrow(() -> new RegraNegocioException("Despesa nao encontrada."));
+        validarEscopo(principal, despesa.getInstituicao());
+        return DespesaDtos.Response.from(despesa);
+    }
+
+    @Transactional
+    public void cancelar(Long id, UserPrincipal principal, HttpServletRequest http) {
+        TransacaoDespesa despesa = despesas.findById(id)
+            .orElseThrow(() -> new RegraNegocioException("Despesa nao encontrada."));
+        validarEscopo(principal, despesa.getInstituicao());
+        
+        if (despesa.getEstado() == EstadoDespesa.PAGA) {
+            throw new RegraNegocioException("Nao pode cancelar despesa ja paga.");
+        }
+        
+        User user = users.findById(principal.id()).orElseThrow();
+        despesa.setEstado(EstadoDespesa.CANCELADA);
+        auditService.registrar(user, despesa.getInstituicao(), "CANCELAR_DESPESA", "DESPESA", String.valueOf(id),
+            "SUCESSO", "ALERTA", Map.of("estadoAnterior", "PENDENTE_CABIMENTADA", "estado", EstadoDespesa.CANCELADA.name()), http);
+    }
 }

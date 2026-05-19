@@ -1,7 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Eye } from "lucide-react";
+import { Eye, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -57,21 +57,36 @@ export function LoginPageClient({ nextPath }: { nextPath?: string }) {
   }
 
   return (
-    <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(210,169,40,0.18),_transparent_26%),linear-gradient(180deg,#f4f6f8_0%,#e8edf2_52%,#dde6ee_100%)] px-5 py-10">
-      <div className="absolute inset-x-0 top-0 h-72 bg-[linear-gradient(180deg,rgba(7,27,51,0.96),rgba(18,53,91,0.88))]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(255,255,255,0.2),transparent_18%),radial-gradient(circle_at_85%_25%,rgba(210,169,40,0.15),transparent_16%)]" />
-      <section className="relative w-full max-w-md">
-        <div className="mb-6 flex justify-center">
-          <div className="rounded-[28px] border border-white/18 bg-white/8 px-6 py-4 shadow-[0_24px_70px_rgba(6,18,33,0.26)] backdrop-blur-xl">
-            <InstitutionalBrand />
+    <main className="min-h-screen bg-[#f4f6f8] px-5 py-10">
+      <section className="mx-auto grid min-h-[calc(100vh-5rem)] w-full max-w-6xl overflow-hidden rounded-lg border border-border bg-white shadow-institutional lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="flex flex-col justify-between bg-institutional-deep p-6 text-white md:p-8">
+          <div>
+            <InstitutionalBrand compact />
+            <div className="mt-12 max-w-md">
+              <p className="text-xs font-bold uppercase text-institutional-gold">Acesso institucional</p>
+              <h1 className="mt-4 text-3xl font-bold leading-tight md:text-4xl">Sistema de Gestao das Financas do Estado</h1>
+              <p className="mt-4 text-sm leading-6 text-slate-300">
+                Ambiente reservado para utilizadores autorizados do circuito financeiro publico.
+              </p>
+            </div>
+          </div>
+          <div className="mt-10 rounded-lg border border-white/10 bg-white/5 p-4">
+            <div className="flex items-center gap-3">
+              <ShieldCheck className="h-5 w-5 text-institutional-gold" />
+              <div>
+                <div className="text-sm font-semibold text-white">Sessao protegida</div>
+                <div className="text-xs text-slate-300">Africa/Luanda | SGFE</div>
+              </div>
+            </div>
           </div>
         </div>
-        <Card className="w-full max-w-md border-white/70 bg-white/92 shadow-[0_32px_100px_rgba(8,26,45,0.16)] backdrop-blur-xl">
-          <CardContent className="p-7 md:p-8">
-            <div className="mb-7 text-center">
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-institutional-gold">SGFE</p>
+        <div className="flex items-center justify-center p-6 md:p-10">
+          <Card className="w-full max-w-md border-0 bg-transparent shadow-none">
+            <CardContent className="p-0">
+            <div className="mb-7">
+              <p className="text-xs font-bold uppercase text-institutional-gold">SGFE</p>
               <h2 className="mt-2 text-3xl font-bold text-institutional-ink">Iniciar sessao</h2>
-              <p className="mt-3 text-sm leading-6 text-slate-600">Acesso institucional com identidade visual oficial do Ministerio das Financas.</p>
+              <p className="mt-3 text-sm leading-6 text-slate-600">Use a sua credencial institucional para continuar.</p>
             </div>
             {error ? <div className="mb-4 rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-800">{error}</div> : null}
             <form className="space-y-4" onSubmit={form.handleSubmit(onSubmit)}>
@@ -97,14 +112,15 @@ export function LoginPageClient({ nextPath }: { nextPath?: string }) {
             </form>
             <div className="mt-6 text-center text-sm text-muted-foreground">
               <Link href="/recuperar-senha" className="font-semibold text-institutional-blue hover:underline">Recuperar palavra-passe</Link>
-              <span className="mx-2">·</span>
+              <span className="mx-2">|</span>
               <Link href="/" className="font-semibold text-institutional-blue hover:underline">Voltar a pagina institucional</Link>
             </div>
-            <div className="mt-6 border-t border-slate-200 pt-4 text-center text-xs font-medium uppercase tracking-[0.18em] text-slate-500">
-              Ministerio das Financas · Plataforma SGFE
+            <div className="mt-6 border-t border-slate-200 pt-4 text-center text-xs font-medium uppercase text-slate-500">
+              Ministerio das Financas | Plataforma SGFE
             </div>
           </CardContent>
         </Card>
+        </div>
       </section>
     </main>
   );

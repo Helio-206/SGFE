@@ -13,7 +13,7 @@ export function InstitutionalBrand({ compact = false }: { compact?: boolean }) {
         priority
       />
       <div className="leading-tight">
-        <div className="text-xs font-semibold uppercase tracking-[0.18em] text-institutional-gold">Portal central</div>
+        <div className="text-xs font-semibold uppercase text-institutional-gold">Portal central</div>
         <div className={compact ? "text-sm font-bold text-white" : "text-base font-bold text-institutional-ink"}>
           Ministerio das Financas
         </div>

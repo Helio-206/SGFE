@@ -7,6 +7,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -28,6 +29,12 @@ public class OrcamentoController {
     @PreAuthorize("hasAnyRole('ADMIN','AUDITOR')")
     public Page<OrcamentoDtos.Response> listar(Pageable pageable) {
         return service.listar(pageable);
+    }
+
+    @GetMapping("/{id}")
+    @PreAuthorize("hasAnyRole('ADMIN','AUDITOR')")
+    public OrcamentoDtos.Response obter(@PathVariable Long id) {
+        return service.obter(id);
     }
 
     @GetMapping("/meu-tecto")
@@ -55,5 +62,11 @@ public class OrcamentoController {
         HttpServletRequest http
     ) {
         return service.atualizar(id, request, principal, http);
+    }
+
+    @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
+    public void remover(@PathVariable Long id, @AuthenticationPrincipal UserPrincipal principal, HttpServletRequest http) {
+        service.remover(id, principal, http);
     }
 }

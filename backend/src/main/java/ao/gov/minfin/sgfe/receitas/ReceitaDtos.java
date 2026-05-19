@@ -14,7 +14,8 @@ public final class ReceitaDtos {
         @NotNull FonteReceita fonteReceita,
         @NotNull LocalDate dataRegistro,
         @NotNull @DecimalMin(value = "0.01") BigDecimal valorArrecadado,
-        @NotNull Long idClasse
+        @NotNull Long idClasse,
+        Long idAutorizacaoRetroativa
     ) {}
 
     public record Response(

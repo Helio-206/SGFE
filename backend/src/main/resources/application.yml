@@ -24,6 +24,14 @@ spring:
 server:
   port: ${SGFE_PORT:8080}
 
+debug: false
+
+logging:
+  level:
+    root: INFO
+    org.hibernate.SQL: INFO
+    org.springframework.web: INFO
+
 sgfe:
   branding:
     minfin-logo-url: ${SGFE_MINFIN_LOGO_URL:https://www.minfin.gov.ao/assets/img/log.png}
@@ -34,7 +42,7 @@ sgfe:
     cookie-secure: ${SGFE_COOKIE_SECURE:false}
     cookie-same-site: ${SGFE_COOKIE_SAME_SITE:Lax}
   cors:
-    allowed-origins: ${SGFE_CORS_ORIGINS:http://127.0.0.1:39117,http://localhost:39117}
+    allowed-origins: ${SGFE_CORS_ORIGINS:http://localhost:3000,http://127.0.0.1:3000,http://localhost:39117,http://127.0.0.1:39117}
 
 management:
   endpoints:

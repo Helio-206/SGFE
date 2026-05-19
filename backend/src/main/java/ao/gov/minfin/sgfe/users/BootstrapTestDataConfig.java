@@ -1,16 +1,11 @@
 package ao.gov.minfin.sgfe.users;
 
-import ao.gov.minfin.sgfe.auditoria.AuditLogRepository;
-import ao.gov.minfin.sgfe.auth.PasswordResetTokenRepository;
-import ao.gov.minfin.sgfe.auth.RefreshTokenRepository;
 import ao.gov.minfin.sgfe.common.Role;
 import ao.gov.minfin.sgfe.common.UserStatus;
-import ao.gov.minfin.sgfe.despesas.TransacaoDespesaRepository;
 import ao.gov.minfin.sgfe.instituicoes.Instituicao;
 import ao.gov.minfin.sgfe.instituicoes.InstituicaoRepository;
 import ao.gov.minfin.sgfe.orcamentos.Orcamento;
 import ao.gov.minfin.sgfe.orcamentos.OrcamentoRepository;
-import ao.gov.minfin.sgfe.receitas.TransacaoReceitaRepository;
 import java.math.BigDecimal;
 import java.time.Year;
 import java.util.LinkedHashMap;
@@ -35,11 +30,6 @@ public class BootstrapTestDataConfig implements ApplicationRunner {
     private final UserRepository users;
     private final InstituicaoRepository instituicoes;
     private final OrcamentoRepository orcamentos;
-    private final TransacaoDespesaRepository despesas;
-    private final TransacaoReceitaRepository receitas;
-    private final RefreshTokenRepository refreshTokens;
-    private final PasswordResetTokenRepository passwordResetTokens;
-    private final AuditLogRepository auditLogs;
     private final PasswordEncoder passwordEncoder;
     private final boolean enabled;
 
@@ -47,22 +37,12 @@ public class BootstrapTestDataConfig implements ApplicationRunner {
         UserRepository users,
         InstituicaoRepository instituicoes,
         OrcamentoRepository orcamentos,
-        TransacaoDespesaRepository despesas,
-        TransacaoReceitaRepository receitas,
-        RefreshTokenRepository refreshTokens,
-        PasswordResetTokenRepository passwordResetTokens,
-        AuditLogRepository auditLogs,
         PasswordEncoder passwordEncoder,
         @Value("${SGFE_BOOTSTRAP_TEST_DATA:false}") boolean enabled
     ) {
         this.users = users;
         this.instituicoes = instituicoes;
         this.orcamentos = orcamentos;
-        this.despesas = despesas;
-        this.receitas = receitas;
-        this.refreshTokens = refreshTokens;
-        this.passwordResetTokens = passwordResetTokens;
-        this.auditLogs = auditLogs;
         this.passwordEncoder = passwordEncoder;
         this.enabled = enabled;
     }
@@ -73,8 +53,6 @@ public class BootstrapTestDataConfig implements ApplicationRunner {
         if (!enabled) {
             return;
         }
-
-        limparDadosOperacionais();
 
         Map<String, Instituicao> instituicoesSeed = seedInstituicoes();
         User admin = criarUtilizador(
@@ -140,17 +118,7 @@ public class BootstrapTestDataConfig implements ApplicationRunner {
         criarOrcamento(admin, instituicoesSeed.get("UO-003"), new BigDecimal("760000000.00"));
         criarOrcamento(admin, instituicoesSeed.get("UO-004"), new BigDecimal("540000000.00"));
 
-        LOG.info("Dados de teste do SGFE recriados: {} instituicoes, 7 utilizadores e 4 orcamentos.", instituicoesSeed.size());
-    }
-
-    private void limparDadosOperacionais() {
-        refreshTokens.deleteAllInBatch();
-        passwordResetTokens.deleteAllInBatch();
-        auditLogs.deleteAllInBatch();
-        despesas.deleteAllInBatch();
-        receitas.deleteAllInBatch();
-        orcamentos.deleteAllInBatch();
-        users.deleteAllInBatch();
+        LOG.info("Dados de teste do SGFE assegurados sem apagar dados operacionais: {} instituicoes, 7 utilizadores e 4 orcamentos.", instituicoesSeed.size());
     }
 
     private Map<String, Instituicao> seedInstituicoes() {
@@ -163,19 +131,22 @@ public class BootstrapTestDataConfig implements ApplicationRunner {
 
         Map<String, Instituicao> resultado = new LinkedHashMap<>();
         for (InstituicaoSeed seed : seeds) {
-            Instituicao instituicao = instituicoes.findByCodigo(seed.codigo()).orElseGet(Instituicao::new);
-            instituicao.setCodigo(seed.codigo());
-            instituicao.setNome(seed.nome());
-            instituicao.setTipo(seed.tipo());
-            instituicao.setResponsavel(seed.responsavel());
-            instituicao.setStatus("ATIVA");
-            resultado.put(seed.codigo(), instituicoes.save(instituicao));
+            Instituicao instituicao = instituicoes.findByCodigo(seed.codigo()).orElseGet(() -> {
+                Instituicao nova = new Instituicao();
+                nova.setCodigo(seed.codigo());
+                nova.setNome(seed.nome());
+                nova.setTipo(seed.tipo());
+                nova.setResponsavel(seed.responsavel());
+                nova.setStatus("ATIVA");
+                return instituicoes.save(nova);
+            });
+            resultado.put(seed.codigo(), instituicao);
         }
         return resultado;
     }
 
     private User criarUtilizador(String nome, String username, String email, String rawPassword, Role role, Instituicao instituicao) {
-        User user = new User();
+        User user = users.findByEmailIgnoreCase(email).orElseGet(User::new);
         user.setNome(nome);
         user.setUsername(username);
         user.setEmail(email);
@@ -187,10 +158,15 @@ public class BootstrapTestDataConfig implements ApplicationRunner {
     }
 
     private void criarOrcamento(User admin, Instituicao instituicao, BigDecimal valorTotal) {
+        int anoFiscal = Year.now().getValue();
+        if (orcamentos.existsByInstituicaoIdAndAnoFiscal(instituicao.getId(), anoFiscal)) {
+            return;
+        }
+
         Orcamento orcamento = new Orcamento();
         orcamento.setUsuario(admin);
         orcamento.setInstituicao(instituicao);
-        orcamento.setAnoFiscal(Year.now().getValue());
+        orcamento.setAnoFiscal(anoFiscal);
         orcamento.setValorTotal(valorTotal);
         orcamentos.save(orcamento);
     }

@@ -48,7 +48,7 @@ port_is_busy() {
   return 1
 }
 
-resolve_frontend_port() {
+resolve_available_port() {
   local candidate="$1"
 
   while port_is_busy "$candidate"; do
@@ -58,8 +58,11 @@ resolve_frontend_port() {
   printf '%s' "$candidate"
 }
 
+BACKEND_PORT_REQUESTED="${SGFE_PORT:-8080}"
+SGFE_PORT="$(resolve_available_port "$BACKEND_PORT_REQUESTED")"
+
 FRONTEND_PORT_REQUESTED="$FRONTEND_PORT"
-FRONTEND_PORT="$(resolve_frontend_port "$FRONTEND_PORT")"
+FRONTEND_PORT="$(resolve_available_port "$FRONTEND_PORT")"
 
 export SGFE_DB_URL="${SGFE_DB_URL:-jdbc:mysql://localhost:3306/sgfe?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC}"
 export SGFE_DB_USERNAME="${SGFE_DB_USERNAME:-sgfe_user}"
@@ -68,7 +71,7 @@ export SGFE_JWT_SECRET="${SGFE_JWT_SECRET:-change-this-development-secret-change
 export SGFE_ACCESS_TOKEN_MINUTES="${SGFE_ACCESS_TOKEN_MINUTES:-15}"
 export SGFE_REFRESH_TOKEN_DAYS="${SGFE_REFRESH_TOKEN_DAYS:-7}"
 export SGFE_CORS_ORIGINS="${SGFE_CORS_ORIGINS:-$(build_cors_origins "$FRONTEND_PORT" "$FRONTEND_HOST")}"
-export SGFE_PORT="${SGFE_PORT:-8080}"
+export SGFE_PORT
 export NEXT_PUBLIC_API_BASE_URL="${NEXT_PUBLIC_API_BASE_URL:-http://localhost:${SGFE_PORT}/api}"
 
 cleanup() {
@@ -79,6 +82,10 @@ trap cleanup EXIT INT TERM
 
 if [[ "$FRONTEND_PORT" != "$FRONTEND_PORT_REQUESTED" ]]; then
   echo "Porta $FRONTEND_PORT_REQUESTED ocupada para o frontend; usando $FRONTEND_PORT."
+fi
+
+if [[ "$SGFE_PORT" != "$BACKEND_PORT_REQUESTED" ]]; then
+  echo "Porta $BACKEND_PORT_REQUESTED ocupada para o backend; usando $SGFE_PORT."
 fi
 
 echo "SGFE backend:  http://localhost:${SGFE_PORT}"

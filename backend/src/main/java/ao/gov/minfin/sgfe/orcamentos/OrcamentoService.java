@@ -107,4 +107,27 @@ public class OrcamentoService {
     public BigDecimal comprometido(Long idInst, int anoFiscal) {
         return despesas.sumByInstituicaoAnoEstados(idInst, anoFiscal, EstadoDespesa.estadosQueComprometemTecto());
     }
+
+    @Transactional(readOnly = true)
+    public OrcamentoDtos.Response obter(Long id) {
+        Orcamento o = orcamentos.findById(id)
+            .orElseThrow(() -> new RegraNegocioException("Orcamento nao encontrado."));
+        return OrcamentoDtos.Response.from(o, comprometido(o.getInstituicao().getId(), o.getAnoFiscal()));
+    }
+
+    @Transactional
+    public void remover(Long id, UserPrincipal principal, HttpServletRequest http) {
+        Orcamento o = orcamentos.findById(id)
+            .orElseThrow(() -> new RegraNegocioException("Orcamento nao encontrado."));
+        
+        BigDecimal comprometido = comprometido(o.getInstituicao().getId(), o.getAnoFiscal());
+        if (comprometido.signum() > 0) {
+            throw new RegraNegocioException("Nao pode remover orcamento com compromissos registrados.");
+        }
+        
+        User user = users.findById(principal.id()).orElseThrow();
+        orcamentos.deleteById(id);
+        auditService.registrar(user, o.getInstituicao(), "REMOVER_ORCAMENTO", "ORCAMENTO", String.valueOf(id),
+            "SUCESSO", "CRITICO", Map.of("valorTotal", o.getValorTotal(), "anoFiscal", o.getAnoFiscal()), http);
+    }
 }

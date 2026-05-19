@@ -4,6 +4,7 @@ import java.util.Arrays;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -57,6 +58,14 @@ public class SecurityConfig {
                     "/api/auth/reset-password",
                     "/actuator/health"
                 ).permitAll()
+                .requestMatchers(HttpMethod.POST, "/api/instituicoes").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.PUT, "/api/instituicoes/**").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.DELETE, "/api/instituicoes/**").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.POST, "/api/orcamentos").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.PUT, "/api/orcamentos/**").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.DELETE, "/api/orcamentos/**").hasRole("ADMIN")
+                .requestMatchers("/api/users/me", "/api/users/me/password").authenticated()
+                .requestMatchers("/api/users/**").hasRole("ADMIN")
                 .anyRequest().authenticated()
             )
             .authenticationProvider(authenticationProvider())

@@ -84,6 +84,23 @@ export type Receita = {
   codigoClasse: string;
 };
 
+export type AutorizacaoReceitaRetroativa = {
+  id: number;
+  idInst: number;
+  codigoUo: string;
+  instituicao: string;
+  solicitante: string;
+  auditor?: string;
+  dataRegistro: string;
+  diasAtraso: number;
+  motivo: string;
+  status: "PENDENTE" | "AUTORIZADA" | "UTILIZADA";
+  idReceita?: number;
+  createdAt: string;
+  autorizadoAt?: string;
+  utilizadoAt?: string;
+};
+
 export type Despesa = {
   id: number;
   idInst: number;
@@ -182,7 +199,12 @@ export async function apiFetch<T>(path: string, init?: RequestInit, retryOnUnaut
     return undefined as T;
   }
 
-  return response.json() as Promise<T>;
+  const text = await response.text();
+  if (!text) {
+    return undefined as T;
+  }
+
+  return JSON.parse(text) as T;
 }
 
 export async function logoutRequest() {
@@ -209,6 +231,33 @@ export async function downloadFile(path: string, fileName: string, retryOnUnauth
   if (response.status === 401 && retryOnUnauthorized) {
     await refreshSession();
     return downloadFile(path, fileName, false);
+  }
+
+  if (!response.ok) {
+    throw new ApiError(await readErrorMessage(response), response.status);
+  }
+
+  const blob = await response.blob();
+  const url = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = fileName;
+  anchor.click();
+  URL.revokeObjectURL(url);
+}
+
+export async function downloadPostFile(path: string, body: unknown, fileName: string, retryOnUnauthorized = true) {
+  const response = await fetch(`${API_BASE_URL}${path}`, {
+    method: "POST",
+    credentials: "include",
+    cache: "no-store",
+    headers: buildHeaders(undefined, true),
+    body: JSON.stringify(body ?? {})
+  });
+
+  if (response.status === 401 && retryOnUnauthorized) {
+    await refreshSession();
+    return downloadPostFile(path, body, fileName, false);
   }
 
   if (!response.ok) {

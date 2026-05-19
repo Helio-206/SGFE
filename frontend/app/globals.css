@@ -14,8 +14,8 @@
   --border: 215 22% 86%;
   --input: 215 22% 86%;
   --ring: 43 67% 47%;
-  --font-display: "Georgia", "Times New Roman", serif;
-  --font-body: "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-display: "Inter", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
 }
 
 * {
@@ -38,13 +38,11 @@ h2,
 h3,
 .font-display {
   font-family: var(--font-display);
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
 }
 
 .institutional-hero {
   background:
-    radial-gradient(circle at top left, rgba(210, 169, 40, 0.2), transparent 22%),
-    radial-gradient(circle at 80% 20%, rgba(14, 107, 107, 0.18), transparent 26%),
     linear-gradient(135deg, #071b33 0%, #0a2846 45%, #10375b 100%);
 }
 
@@ -65,9 +63,8 @@ h3,
   min-width: 5.25rem;
   align-items: center;
   justify-content: center;
-  border-radius: 1.75rem;
+  border-radius: 8px;
   background:
-    radial-gradient(circle at 30% 30%, rgba(210, 169, 40, 0.18), transparent 48%),
     linear-gradient(135deg, rgba(7, 27, 51, 0.96), rgba(15, 58, 97, 0.94));
   color: #f6f1e2;
   font-family: var(--font-display);

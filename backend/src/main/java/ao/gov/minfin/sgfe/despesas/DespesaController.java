@@ -7,6 +7,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -29,6 +30,12 @@ public class DespesaController {
         return service.listar(principal, pageable);
     }
 
+    @GetMapping("/{id}")
+    @PreAuthorize("hasAnyRole('ADMIN','GESTOR','AUDITOR')")
+    public DespesaDtos.Response obter(@PathVariable Long id, @AuthenticationPrincipal UserPrincipal principal) {
+        return service.obter(id, principal);
+    }
+
     @PostMapping
     @PreAuthorize("hasAnyRole('ADMIN','GESTOR')")
     public DespesaDtos.Response criar(
@@ -49,5 +56,11 @@ public class DespesaController {
     @PreAuthorize("hasAnyRole('ADMIN','GESTOR')")
     public DespesaDtos.Response pagar(@PathVariable Long id, @AuthenticationPrincipal UserPrincipal principal, HttpServletRequest http) {
         return service.pagar(id, principal, http);
+    }
+
+    @DeleteMapping("/{id}")
+    @PreAuthorize("hasAnyRole('ADMIN','GESTOR')")
+    public void cancelar(@PathVariable Long id, @AuthenticationPrincipal UserPrincipal principal, HttpServletRequest http) {
+        service.cancelar(id, principal, http);
     }
 }

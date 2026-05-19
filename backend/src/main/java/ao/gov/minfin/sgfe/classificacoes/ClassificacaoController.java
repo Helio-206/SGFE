@@ -13,6 +13,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -38,6 +39,14 @@ public class ClassificacaoController {
     @PreAuthorize("hasAnyRole('ADMIN','GESTOR','AUDITOR')")
     public Page<ClassificacaoDtos.Response> listar(Pageable pageable) {
         return classificacoes.findAll(pageable).map(ClassificacaoDtos.Response::from);
+    }
+
+    @GetMapping("/{id}")
+    @PreAuthorize("hasAnyRole('ADMIN','GESTOR','AUDITOR')")
+    public ClassificacaoDtos.Response obter(@PathVariable Long id) {
+        return classificacoes.findById(id)
+            .map(ClassificacaoDtos.Response::from)
+            .orElseThrow(() -> new RegraNegocioException("Classificacao nao encontrada."));
     }
 
     @PostMapping
@@ -85,5 +94,17 @@ public class ClassificacaoController {
             "SUCESSO", "INFO", Map.of("codigo", c.getCodigo()), http);
 
         return ClassificacaoDtos.Response.from(c);
+    }
+
+    @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
+    public void remover(@PathVariable Long id, @AuthenticationPrincipal UserPrincipal principal, HttpServletRequest http) {
+        ClassificacaoEconomica c = classificacoes.findById(id)
+            .orElseThrow(() -> new RegraNegocioException("Classificacao nao encontrada."));
+        classificacoes.deleteById(id);
+
+        User user = users.findById(principal.id()).orElse(null);
+        auditService.registrar(user, user != null ? user.getInstituicao() : null, "REMOVER_CLASSIFICACAO", "CLASSIFICACAO", String.valueOf(id),
+            "SUCESSO", "INFO", Map.of("codigo", c.getCodigo()), http);
     }
 }

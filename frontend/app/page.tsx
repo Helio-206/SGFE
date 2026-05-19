@@ -43,7 +43,7 @@ export default function LandingPage() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl"
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-institutional-gold">Infraestrutura operacional do Estado</p>
+            <p className="text-sm font-semibold uppercase text-institutional-gold">Infraestrutura operacional do Estado</p>
             <h1 className="mt-5 max-w-4xl text-5xl font-bold leading-[1.02] md:text-7xl">
               Execucao financeira publica com leitura nacional, controlo institucional e prova auditavel.
             </h1>
@@ -67,9 +67,9 @@ export default function LandingPage() {
                 { value: "RBAC", label: "governanca", detail: "permissoes por papel e por contexto" },
                 { value: "24/7", label: "rastreabilidade", detail: "eventos criticos persistidos para auditoria" }
               ].map((item) => (
-                <div key={item.label} className="rounded-3xl border border-white/10 bg-white/8 p-5 backdrop-blur-md">
+                <div key={item.label} className="rounded-lg border border-white/10 bg-white/8 p-5 backdrop-blur-md">
                   <div className="text-3xl font-bold text-white">{item.value}</div>
-                  <div className="mt-3 text-sm font-semibold uppercase tracking-[0.18em] text-institutional-gold">{item.label}</div>
+                  <div className="mt-3 text-sm font-semibold uppercase text-institutional-gold">{item.label}</div>
                   <p className="mt-2 text-sm leading-6 text-slate-200">{item.detail}</p>
                 </div>
               ))}
@@ -81,7 +81,7 @@ export default function LandingPage() {
       <section className="border-b border-black/5 bg-[#ebece7] py-16">
         <div className="mx-auto grid max-w-7xl gap-8 px-5 md:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-institutional-gold">Desafio operacional</p>
+            <p className="text-xs font-bold uppercase text-institutional-gold">Desafio operacional</p>
             <h2 className="mt-3 text-3xl font-bold text-institutional-ink">Menos dispersao, mais prova institucional</h2>
           </div>
           <p className="text-lg leading-8 text-slate-700">
@@ -93,13 +93,13 @@ export default function LandingPage() {
       <section id="fluxo" className="fine-grid py-20">
         <div className="mx-auto max-w-7xl px-5">
           <div className="max-w-3xl">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-institutional-gold">Fluxo leve e rastreavel</p>
+            <p className="text-xs font-bold uppercase text-institutional-gold">Fluxo leve e rastreavel</p>
             <h2 className="mt-3 text-4xl font-bold">O ciclo financeiro cabe num percurso legivel, nao num emaranhado de ecras.</h2>
           </div>
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {flow.map((item) => (
-              <div key={item.step} className="rounded-[28px] border border-black/5 bg-white/80 p-6 shadow-[0_18px_55px_rgba(8,26,45,0.08)]">
-                <div className="text-sm font-semibold uppercase tracking-[0.22em] text-institutional-gold">Etapa {item.step}</div>
+              <div key={item.step} className="rounded-lg border border-black/5 bg-white/80 p-6 shadow-[0_18px_55px_rgba(8,26,45,0.08)]">
+                <div className="text-sm font-semibold uppercase text-institutional-gold">Etapa {item.step}</div>
                 <h3 className="mt-4 text-2xl font-bold text-institutional-ink">{item.title}</h3>
                 <p className="mt-3 leading-7 text-slate-700">{item.text}</p>
               </div>
@@ -112,13 +112,13 @@ export default function LandingPage() {
         <div className="mx-auto max-w-7xl px-5">
           <div className="flex items-end justify-between gap-5">
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-institutional-gold">Plataforma</p>
+              <p className="text-xs font-bold uppercase text-institutional-gold">Plataforma</p>
               <h2 className="mt-3 text-4xl font-bold">Blocos funcionais desenhados para a administracao publica</h2>
             </div>
           </div>
           <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {modules.map((module) => (
-              <div key={module.title} className="rounded-[28px] border border-black/5 bg-[#fbfaf7] p-6 shadow-[0_20px_65px_rgba(8,26,45,0.06)]">
+              <div key={module.title} className="rounded-lg border border-black/5 bg-[#fbfaf7] p-6 shadow-[0_20px_65px_rgba(8,26,45,0.06)]">
                 <CheckCircle2 className="h-5 w-5 text-institutional-gold" />
                 <div className="mt-4 text-xl font-semibold">{module.title}</div>
                 <p className="mt-3 leading-7 text-slate-700">{module.text}</p>
@@ -135,7 +135,7 @@ export default function LandingPage() {
             { icon: Layers3, title: "Consolidacao", text: "Receitas, despesas e tectos sobem para leitura nacional sem perder o detalhe da entidade." },
             { icon: FileCheck2, title: "Seguranca aplicada", text: "Sessao por cookies HttpOnly, RBAC, refresh controlado e auditoria persistente." }
           ].map((item) => (
-            <div key={item.title} className="rounded-[28px] border border-white/10 bg-white/5 p-6">
+            <div key={item.title} className="rounded-lg border border-white/10 bg-white/5 p-6">
               <item.icon className="h-6 w-6 text-institutional-gold" />
               <h3 className="mt-5 text-lg font-bold">{item.title}</h3>
               <p className="mt-3 leading-7 text-slate-300">{item.text}</p>
@@ -147,7 +147,7 @@ export default function LandingPage() {
       <section id="parceiros" className="py-20">
         <div className="mx-auto max-w-7xl px-5">
           <div className="max-w-3xl">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-institutional-gold">Parceiros institucionais</p>
+            <p className="text-xs font-bold uppercase text-institutional-gold">Parceiros institucionais</p>
             <h2 className="mt-3 text-4xl font-bold">Entidades centrais do ecossistema financeiro do Estado</h2>
           </div>
           <div className="mt-10 overflow-x-auto pb-3">
