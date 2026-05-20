@@ -40,9 +40,10 @@ public class ReceitaAutorizacaoService {
     private static final DateTimeFormatter DATA_FORMAT = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     private static final DateTimeFormatter EMITIDO_EM = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZONA_SISTEMA);
     private static final Color INK = new Color(17, 19, 24);
-    private static final Color BLUE = new Color(18, 53, 91);
-    private static final Color MIST = new Color(238, 243, 248);
-    private static final Color LINE = new Color(216, 222, 232);
+    private static final Color MINFIN_RED = new Color(177, 18, 38);
+    private static final Color MINFIN_GOLD = new Color(201, 162, 39);
+    private static final Color MINFIN_RED_MIST = new Color(253, 244, 246);
+    private static final Color LINE = new Color(229, 210, 214);
     private static final Color MUTED = new Color(82, 94, 111);
     private static final Color WHITE = Color.WHITE;
 
@@ -140,6 +141,19 @@ public class ReceitaAutorizacaoService {
         return pdf;
     }
 
+    @Transactional(readOnly = true)
+    public byte[] gerarPdfAutorizacao(Long id, UserPrincipal principal) {
+        AutorizacaoReceitaRetroativa autorizacao = autorizacoes.findById(id)
+            .orElseThrow(() -> new RegraNegocioException("Autorizacao retroativa nao encontrada."));
+        if (principal.isGestor() && !autorizacao.getInstituicao().getId().equals(principal.idInst())) {
+            throw new RegraNegocioException("Nao pode acessar autorizacao de outra Unidade Orcamental.");
+        }
+        if (autorizacao.getStatus() == AutorizacaoReceitaRetroativaStatus.PENDENTE) {
+            throw new RegraNegocioException("A autorizacao ainda nao foi aprovada pelo Auditor.");
+        }
+        return gerarPdf(autorizacao);
+    }
+
     LocalDate hoje() {
         return LocalDate.now(ZONA_SISTEMA);
     }
@@ -152,7 +166,7 @@ public class ReceitaAutorizacaoService {
         document.open();
         addDocumentHeader(document, autorizacao);
         Paragraph intro = new Paragraph(
-            "Este documento autoriza uma unica criacao de Receita RUPE com data anterior a data corrente.",
+            "Este documento autoriza uma única criação de Receita RUPE com data anterior a data corrente, vinculada a Unidade Orcamental indicada.",
             new Font(Font.HELVETICA, 10, Font.NORMAL, MUTED)
         );
         intro.setSpacingBefore(12);
@@ -165,15 +179,18 @@ public class ReceitaAutorizacaoService {
         addRow(table, "Autorizacao", String.valueOf(autorizacao.getId()));
         addRow(table, "Unidade Orcamental", autorizacao.getInstituicao().getCodigo() + " - " + autorizacao.getInstituicao().getNome());
         addRow(table, "Solicitante", autorizacao.getSolicitante().getNome());
-        addRow(table, "Auditor", autorizacao.getAuditor().getNome());
+        addRow(table, "Auditor", autorizacao.getAuditor() != null ? autorizacao.getAuditor().getNome() : "Pendente");
         addRow(table, "Data pretendida", DATA_FORMAT.format(autorizacao.getDataRegistro()));
         addRow(table, "Dias de atraso", String.valueOf(autorizacao.getDiasAtraso()));
         addRow(table, "Motivo", autorizacao.getMotivo());
         addRow(table, "Estado", String.valueOf(autorizacao.getStatus()));
+        if (autorizacao.getReceita() != null) {
+            addRow(table, "Receita vinculada", String.valueOf(autorizacao.getReceita().getId()));
+        }
         document.add(table);
         Paragraph notice = new Paragraph(
             "A autorizacao encerra automaticamente apos a criacao da receita correspondente.",
-            new Font(Font.HELVETICA, 9, Font.BOLD, BLUE)
+            new Font(Font.HELVETICA, 9, Font.BOLD, MINFIN_RED)
         );
         notice.setSpacingBefore(14);
         document.add(notice);
@@ -187,9 +204,9 @@ public class ReceitaAutorizacaoService {
         PdfPCell cell = new PdfPCell();
         cell.setBorder(0);
         cell.setPadding(14);
-        cell.setBackgroundColor(BLUE);
+        cell.setBackgroundColor(MINFIN_RED);
 
-        Paragraph institution = new Paragraph("Republica de Angola | Ministerio das Financas", new Font(Font.HELVETICA, 9, Font.BOLD, new Color(229, 234, 242)));
+        Paragraph institution = new Paragraph("Republica de Angola | Ministerio das Financas", new Font(Font.HELVETICA, 9, Font.BOLD, new Color(255, 243, 214)));
         institution.setSpacingAfter(5);
         cell.addElement(institution);
 
@@ -199,15 +216,22 @@ public class ReceitaAutorizacaoService {
 
         cell.addElement(new Paragraph(
             "SGFE #" + autorizacao.getId() + " | Emitido em " + EMITIDO_EM.format(Instant.now()),
-            new Font(Font.HELVETICA, 9, Font.NORMAL, new Color(229, 234, 242))
+            new Font(Font.HELVETICA, 9, Font.NORMAL, new Color(255, 243, 214))
         ));
         table.addCell(cell);
+
+        PdfPCell accent = new PdfPCell();
+        accent.setBorder(0);
+        accent.setFixedHeight(4);
+        accent.setBackgroundColor(MINFIN_GOLD);
+        table.addCell(accent);
+
         document.add(table);
     }
 
     private void addRow(PdfPTable table, String label, String value) {
-        PdfPCell labelCell = new PdfPCell(new Phrase(label, new Font(Font.HELVETICA, 10, Font.BOLD, BLUE)));
-        labelCell.setBackgroundColor(MIST);
+        PdfPCell labelCell = new PdfPCell(new Phrase(label, new Font(Font.HELVETICA, 10, Font.BOLD, MINFIN_RED)));
+        labelCell.setBackgroundColor(MINFIN_RED_MIST);
         labelCell.setBorderColor(LINE);
         labelCell.setPadding(8);
         table.addCell(labelCell);

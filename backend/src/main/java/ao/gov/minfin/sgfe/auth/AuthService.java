@@ -148,7 +148,7 @@ public class AuthService {
         }
 
         User user = users.findByEmailIgnoreCase(token.getEmail())
-            .orElseThrow(() -> new RegraNegocioException("Utilizador nao encontrado."));
+            .orElseThrow(() -> new RegraNegocioException("Utilizador não encontrado."));
         user.setPasswordHash(passwordEncoder.encode(request.newPassword()));
         token.setUsedAt(Instant.now());
 
@@ -211,7 +211,7 @@ public class AuthService {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
             return HexFormat.of().formatHex(digest.digest(raw.getBytes(StandardCharsets.UTF_8)));
         } catch (Exception ex) {
-            throw new IllegalStateException("Nao foi possivel calcular hash do token.", ex);
+            throw new IllegalStateException("Não foi possivel calcular hash do token.", ex);
         }
     }
 

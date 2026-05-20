@@ -34,6 +34,17 @@ public class RelatorioController {
         return arquivoPdf("despesa-por-natureza.pdf", service.despesaPorNaturezaPdf(principal, http));
     }
 
+    @GetMapping("/exportar/auditoria-operacional.pdf")
+    @PreAuthorize("hasAnyRole('ADMIN','AUDITOR')")
+    public ResponseEntity<byte[]> auditoriaOperacional(
+        @AuthenticationPrincipal UserPrincipal principal,
+        @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate inicio,
+        @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate fim,
+        HttpServletRequest http
+    ) {
+        return arquivoPdf("auditoria-operacional.pdf", service.auditoriaOperacionalPdf(principal, inicio, fim, http));
+    }
+
     @GetMapping("/exportar/receitas-rupe.xlsx")
     public ResponseEntity<byte[]> receitasRupe(
         @AuthenticationPrincipal UserPrincipal principal,

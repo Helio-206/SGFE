@@ -2,12 +2,13 @@
 
 import type { ColumnDef } from "@tanstack/react-table";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { Download, Loader2 } from "lucide-react";
 import { useMemo, useState } from "react";
 import { AppShell } from "@/components/layout/app-shell";
 import { DataTable, type DataTableFilter } from "@/components/tables/data-table";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { apiFetch, downloadPostFile, type AuditLog, type AutorizacaoReceitaRetroativa, type PageResponse } from "@/lib/api";
+import { apiFetch, downloadFile, downloadPostFile, type AuditLog, type AutorizacaoReceitaRetroativa, type PageResponse } from "@/lib/api";
 import type { Role } from "@/lib/rbac";
 import { formatDate, formatDateTime } from "@/lib/utils";
 
@@ -31,12 +32,16 @@ const auditColumns: ColumnDef<AuditLog>[] = [
 export default function AuditoriaPage() {
   const queryClient = useQueryClient();
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [auditReportPending, setAuditReportPending] = useState(false);
+  const [auditReportMessage, setAuditReportMessage] = useState<string | null>(null);
+  const [authorizationPdfPendingId, setAuthorizationPdfPendingId] = useState<number | null>(null);
   const { data: user } = useQuery({
     queryKey: ["auth", "me"],
     queryFn: () => apiFetch<SessionUser>("/auth/me"),
     retry: false
   });
   const isAuditor = user?.role === "AUDITOR";
+  const canExportAudit = user?.role === "ADMIN" || user?.role === "AUDITOR";
 
   const { data: logs } = useQuery({
     queryKey: ["audit-logs"],
@@ -113,6 +118,30 @@ export default function AuditoriaPage() {
     }
   });
 
+  async function downloadAuthorizationPdf(id: number) {
+    setErrorMessage(null);
+    setAuthorizationPdfPendingId(id);
+    try {
+      await downloadFile(`/receitas/autorizacoes-retroativas/${id}/pdf`, `autorizacao-receita-retroativa-${id}.pdf`);
+    } catch (error) {
+      setErrorMessage(error instanceof Error ? error.message : "Nao foi possivel baixar o PDF da autorizacao.");
+    } finally {
+      setAuthorizationPdfPendingId(null);
+    }
+  }
+
+  async function exportAuditReport() {
+    setAuditReportPending(true);
+    setAuditReportMessage(null);
+    try {
+      await downloadFile("/relatorios/exportar/auditoria-operacional.pdf", "auditoria-operacional.pdf");
+    } catch (error) {
+      setAuditReportMessage(error instanceof Error ? error.message : "Nao foi possivel exportar o relatorio de auditoria.");
+    } finally {
+      setAuditReportPending(false);
+    }
+  }
+
   const autorizacaoColumns = useMemo<ColumnDef<AutorizacaoReceitaRetroativa>[]>(
     () => [
       { accessorKey: "createdAt", header: "Pedido", cell: ({ row }) => formatDateTime(row.original.createdAt) },
@@ -132,15 +161,30 @@ export default function AuditoriaPage() {
       {
         id: "acoes",
         header: "Acoes",
-        cell: ({ row }) =>
-          isAuditor && row.original.status === "PENDENTE" ? (
-            <Button size="sm" variant="secondary" disabled={isPending} onClick={() => autorizar(row.original.id)}>
-              Autorizar e gerar PDF
-            </Button>
-          ) : null
+        cell: ({ row }) => {
+          if (isAuditor && row.original.status === "PENDENTE") {
+            return (
+              <Button size="sm" variant="secondary" disabled={isPending} onClick={() => autorizar(row.original.id)}>
+                Autorizar e gerar PDF
+              </Button>
+            );
+          }
+
+          if (row.original.status !== "PENDENTE") {
+            const isDownloading = authorizationPdfPendingId === row.original.id;
+            return (
+              <Button size="sm" variant="secondary" disabled={isDownloading} onClick={() => downloadAuthorizationPdf(row.original.id)}>
+                {isDownloading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Download className="h-4 w-4" />}
+                Baixar PDF
+              </Button>
+            );
+          }
+
+          return null;
+        }
       }
     ],
-    [autorizar, isAuditor, isPending]
+    [authorizationPdfPendingId, autorizar, isAuditor, isPending]
   );
 
   return (
@@ -160,7 +204,26 @@ export default function AuditoriaPage() {
             filters={autorizacaoFilters}
           />
         </div>
-        <DataTable columns={auditColumns} data={auditLogs} searchPlaceholder="Filtrar por utilizador, accao, entidade, data ou IP" filters={auditFilters} />
+        <div className="space-y-3">
+          <div className="flex flex-col gap-3 rounded-lg border border-border bg-white p-4 shadow-line sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h2 className="text-base font-bold text-institutional-ink">Relatorio de eventos e acessos</h2>
+              <p className="mt-1 text-sm text-muted-foreground">Entradas, accoes executadas, resultados, severidade e IP de origem.</p>
+            </div>
+            {canExportAudit ? (
+              <Button type="button" variant="secondary" onClick={exportAuditReport} disabled={auditReportPending}>
+                {auditReportPending ? <Loader2 className="h-4 w-4 animate-spin" /> : <Download className="h-4 w-4" />}
+                Exportar PDF de auditoria
+              </Button>
+            ) : null}
+          </div>
+          {auditReportMessage ? (
+            <p className="rounded-md border border-institutional-red/30 bg-institutional-red/5 px-3 py-2 text-sm font-medium text-institutional-red">
+              {auditReportMessage}
+            </p>
+          ) : null}
+          <DataTable columns={auditColumns} data={auditLogs} searchPlaceholder="Filtrar por utilizador, accao, entidade, data ou IP" filters={auditFilters} />
+        </div>
       </div>
     </AppShell>
   );

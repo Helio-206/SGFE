@@ -61,7 +61,7 @@ export function LoginPageClient({ nextPath }: { nextPath?: string }) {
       <section className="mx-auto grid min-h-[calc(100vh-5rem)] w-full max-w-6xl overflow-hidden rounded-lg border border-border bg-white shadow-institutional lg:grid-cols-[0.9fr_1.1fr]">
         <div className="flex flex-col justify-between bg-institutional-deep p-6 text-white md:p-8">
           <div>
-            <InstitutionalBrand compact />
+            <InstitutionalBrand compact inverted />
             <div className="mt-12 max-w-md">
               <p className="text-xs font-bold uppercase text-institutional-gold">Acesso institucional</p>
               <h1 className="mt-4 text-3xl font-bold leading-tight md:text-4xl">Sistema de Gestao das Financas do Estado</h1>

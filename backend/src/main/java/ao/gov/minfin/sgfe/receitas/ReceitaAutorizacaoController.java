@@ -63,4 +63,20 @@ public class ReceitaAutorizacaoController {
             .contentType(MediaType.APPLICATION_PDF)
             .body(new ByteArrayResource(pdf));
     }
+
+    @GetMapping("/{id}/pdf")
+    @PreAuthorize("hasAnyRole('ADMIN','GESTOR','AUDITOR')")
+    public ResponseEntity<ByteArrayResource> pdf(
+        @PathVariable Long id,
+        @AuthenticationPrincipal UserPrincipal principal
+    ) {
+        byte[] pdf = service.gerarPdfAutorizacao(id, principal);
+        return ResponseEntity.ok()
+            .header(HttpHeaders.CONTENT_DISPOSITION, ContentDisposition.attachment()
+                .filename("autorizacao-receita-retroativa-" + id + ".pdf")
+                .build()
+                .toString())
+            .contentType(MediaType.APPLICATION_PDF)
+            .body(new ByteArrayResource(pdf));
+    }
 }

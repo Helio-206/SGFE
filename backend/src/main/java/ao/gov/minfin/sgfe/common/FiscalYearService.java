@@ -19,14 +19,14 @@ public class FiscalYearService {
 
     public void validarDataNoAnoFiscalCorrente(LocalDate data) {
         if (data == null) {
-            throw new RegraNegocioException("A data e obrigatoria.");
+            throw new RegraNegocioException("A data é obrigatória.");
         }
 
         LocalDate hoje = LocalDate.now(clock);
         LocalDate primeiroDia = LocalDate.of(hoje.getYear(), 1, 1);
 
         if (data.isBefore(primeiroDia) || data.isAfter(hoje)) {
-            throw new RegraNegocioException("A data deve pertencer ao ano fiscal corrente e nao pode ser futura.");
+            throw new RegraNegocioException("A data deve pertencer ao ano fiscal corrente e não pode ser futura.");
         }
     }
 }

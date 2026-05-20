@@ -1,14 +1,16 @@
 "use client";
 
-import { CalendarDays, Download, FileSpreadsheet, FileText, Loader2 } from "lucide-react";
-import { useState } from "react";
+import { CalendarDays, Download, FileSpreadsheet, FileText, Loader2, ShieldCheck } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
+import { useMemo, useState } from "react";
 import { AppShell } from "@/components/layout/app-shell";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { downloadFile } from "@/lib/api";
+import { apiFetch, downloadFile } from "@/lib/api";
+import type { Role } from "@/lib/rbac";
 
 const reports = [
   {
@@ -18,7 +20,8 @@ const reports = [
     action: "Exportar PDF",
     path: "/relatorios/exportar/resumo-financeiro.pdf",
     file: "resumo-financeiro.pdf",
-    format: "PDF"
+    format: "PDF",
+    roles: ["ADMIN", "GESTOR", "AUDITOR"] as Role[]
   },
   {
     title: "Despesa por natureza",
@@ -27,7 +30,8 @@ const reports = [
     action: "Exportar PDF",
     path: "/relatorios/exportar/despesa-por-natureza.pdf",
     file: "despesa-por-natureza.pdf",
-    format: "PDF"
+    format: "PDF",
+    roles: ["ADMIN", "GESTOR", "AUDITOR"] as Role[]
   },
   {
     title: "Mapa de receitas RUPE",
@@ -36,9 +40,24 @@ const reports = [
     action: "Exportar Excel",
     path: "/relatorios/exportar/receitas-rupe.xlsx",
     file: "receitas-rupe.xlsx",
-    format: "XLSX"
+    format: "XLSX",
+    roles: ["ADMIN", "GESTOR", "AUDITOR"] as Role[]
+  },
+  {
+    title: "Auditoria operacional",
+    description: "Entradas, accoes executadas, resultado, severidade, UO e IP de origem.",
+    icon: ShieldCheck,
+    action: "Exportar PDF",
+    path: "/relatorios/exportar/auditoria-operacional.pdf",
+    file: "auditoria-operacional.pdf",
+    format: "PDF",
+    roles: ["ADMIN", "AUDITOR"] as Role[]
   }
 ];
+
+type SessionUser = {
+  role: Role;
+};
 
 export default function RelatoriosPage() {
   const currentYear = new Date().getFullYear();
@@ -46,9 +65,18 @@ export default function RelatoriosPage() {
   const [fim, setFim] = useState(new Date().toISOString().slice(0, 10));
   const [pending, setPending] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const { data: user } = useQuery({
+    queryKey: ["auth", "me"],
+    queryFn: () => apiFetch<SessionUser>("/auth/me"),
+    retry: false
+  });
+  const visibleReports = useMemo(
+    () => reports.filter((item) => item.roles.includes("GESTOR") || (user?.role ? item.roles.includes(user.role) : false)),
+    [user?.role]
+  );
 
   async function downloadReport(path: string, fileName: string) {
-    const query = path.endsWith(".xlsx") ? buildQuery(inicio, fim) : "";
+    const query = path.endsWith(".xlsx") || path.includes("auditoria-operacional") ? buildQuery(inicio, fim) : "";
     setPending(fileName);
     setErrorMessage(null);
     try {
@@ -68,7 +96,7 @@ export default function RelatoriosPage() {
             <div>
               <div className="flex items-center gap-2 text-xs font-semibold uppercase text-muted-foreground">
                 <CalendarDays className="h-4 w-4 text-institutional-gold" />
-                Periodo das receitas RUPE
+                Periodo das receitas RUPE e auditoria
               </div>
               <div className="mt-3 grid gap-3 sm:grid-cols-2">
                 <div className="space-y-2">
@@ -89,8 +117,8 @@ export default function RelatoriosPage() {
           </div>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-3">
-          {reports.map((item) => (
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {visibleReports.map((item) => (
             <Card key={item.title} className="overflow-hidden">
               <CardHeader className="flex flex-row items-start justify-between gap-3">
                 <div>
@@ -101,7 +129,7 @@ export default function RelatoriosPage() {
               </CardHeader>
               <CardContent>
                 <div className="flex items-center justify-between gap-4">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-institutional-mist text-institutional-blue">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-institutional-mist text-institutional-red">
                     <item.icon className="h-5 w-5" />
                   </div>
                   <Button variant="secondary" onClick={() => downloadReport(item.path, item.file)} disabled={pending === item.file}>

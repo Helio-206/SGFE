@@ -1,6 +1,8 @@
 package ao.gov.minfin.sgfe.relatorios;
 
 import ao.gov.minfin.sgfe.auditoria.AuditService;
+import ao.gov.minfin.sgfe.auditoria.AuditLog;
+import ao.gov.minfin.sgfe.auditoria.AuditLogRepository;
 import ao.gov.minfin.sgfe.auth.UserPrincipal;
 import ao.gov.minfin.sgfe.common.EstadoDespesa;
 import ao.gov.minfin.sgfe.common.FiscalYearService;
@@ -36,10 +38,14 @@ import java.util.Currency;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Objects;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
@@ -51,9 +57,10 @@ public class RelatorioService {
     private static final ZoneId ZONA_LUANDA = ZoneId.of("Africa/Luanda");
     private static final DateTimeFormatter EMITIDO_EM = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZONA_LUANDA);
     private static final Color INK = new Color(17, 19, 24);
-    private static final Color BLUE = new Color(18, 53, 91);
-    private static final Color MIST = new Color(238, 243, 248);
-    private static final Color LINE = new Color(216, 222, 232);
+    private static final Color MINFIN_RED = new Color(177, 18, 38);
+    private static final Color MINFIN_GOLD = new Color(201, 162, 39);
+    private static final Color MINFIN_RED_MIST = new Color(253, 244, 246);
+    private static final Color LINE = new Color(229, 210, 214);
     private static final Color MUTED = new Color(82, 94, 111);
     private static final Color WHITE = Color.WHITE;
 
@@ -63,6 +70,7 @@ public class RelatorioService {
     private final TransacaoReceitaRepository receitas;
     private final UserRepository users;
     private final AuditService auditService;
+    private final AuditLogRepository auditLogs;
     private final JdbcTemplate jdbc;
     private final String minfinLogoUrl;
 
@@ -73,6 +81,7 @@ public class RelatorioService {
         TransacaoReceitaRepository receitas,
         UserRepository users,
         AuditService auditService,
+        AuditLogRepository auditLogs,
         JdbcTemplate jdbc,
         @Value("${sgfe.branding.minfin-logo-url}") String minfinLogoUrl
     ) {
@@ -82,6 +91,7 @@ public class RelatorioService {
         this.receitas = receitas;
         this.users = users;
         this.auditService = auditService;
+        this.auditLogs = auditLogs;
         this.jdbc = jdbc;
         this.minfinLogoUrl = minfinLogoUrl;
     }
@@ -183,6 +193,98 @@ public class RelatorioService {
     }
 
     @Transactional(readOnly = true)
+    public byte[] auditoriaOperacionalPdf(UserPrincipal principal, LocalDate inicio, LocalDate fim, HttpServletRequest http) {
+        LocalDate dataFim = fim != null ? fim : LocalDate.now(ZONA_LUANDA);
+        LocalDate dataInicio = inicio != null ? inicio : dataFim.minusDays(30);
+        Instant inicioPeriodo = dataInicio.atStartOfDay(ZONA_LUANDA).toInstant();
+        Instant fimExclusivo = dataFim.plusDays(1).atStartOfDay(ZONA_LUANDA).toInstant();
+        Specification<AuditLog> periodo = (root, query, cb) -> cb.and(
+            cb.greaterThanOrEqualTo(root.get("createdAt"), inicioPeriodo),
+            cb.lessThan(root.get("createdAt"), fimExclusivo)
+        );
+
+        var page = auditLogs.findAll(periodo, PageRequest.of(0, 300, Sort.by(Sort.Direction.DESC, "createdAt")));
+        List<AuditLog> rows = page.getContent();
+        long acessos = auditLogs.count(periodo.and((root, query, cb) -> cb.like(root.get("acao"), "%LOGIN%")));
+        long negados = auditLogs.count(periodo.and((root, query, cb) -> cb.or(
+            cb.equal(root.get("resultado"), "NEGADO"),
+            cb.equal(root.get("resultado"), "FALHA")
+        )));
+        long criticos = auditLogs.count(periodo.and((root, query, cb) -> cb.equal(root.get("severidade"), "CRITICO")));
+        long utilizadores = rows.stream()
+            .map(AuditLog::getUsuario)
+            .filter(Objects::nonNull)
+            .map(User::getId)
+            .distinct()
+            .count();
+
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        Document document = new Document(PageSize.A4.rotate(), 32, 32, 54, 54);
+        PdfWriter writer = PdfWriter.getInstance(document, out);
+        writer.setPageEvent(new ReportFooter());
+        document.open();
+        addBrandingHeader(document, "SGFE - Auditoria Operacional");
+        addReportTitle(
+            document,
+            "Relatorio de auditoria operacional",
+            "Reservado a Auditoria | Periodo " + dataInicio + " a " + dataFim + " | Emitido em " + EMITIDO_EM.format(Instant.now())
+        );
+
+        PdfPTable summary = new PdfPTable(4);
+        summary.setWidthPercentage(100);
+        summary.setSpacingBefore(12);
+        summary.setWidths(new float[] {1f, 1f, 1f, 1f});
+        addMetric(summary, "Eventos no periodo", String.valueOf(page.getTotalElements()));
+        addMetric(summary, "Acessos registados", String.valueOf(acessos));
+        addMetric(summary, "Falhas ou negados", String.valueOf(negados));
+        addMetric(summary, "Criticos", String.valueOf(criticos));
+        document.add(summary);
+
+        Paragraph note = new Paragraph(
+            "Amostra exportada: ultimos " + rows.size() + " eventos. Utilizadores distintos nesta amostra: " + utilizadores + ".",
+            new Font(Font.HELVETICA, 8, Font.NORMAL, MUTED)
+        );
+        note.setSpacingBefore(8);
+        note.setSpacingAfter(8);
+        document.add(note);
+
+        PdfPTable table = new PdfPTable(8);
+        table.setWidthPercentage(100);
+        table.setWidths(new float[] {1.35f, 1.9f, 0.8f, 1.55f, 1f, 0.85f, 0.85f, 1.05f});
+        addAuditHeader(table, "Data/hora");
+        addAuditHeader(table, "Utilizador");
+        addAuditHeader(table, "UO");
+        addAuditHeader(table, "Accao executada");
+        addAuditHeader(table, "Entidade");
+        addAuditHeader(table, "Resultado");
+        addAuditHeader(table, "Sever.");
+        addAuditHeader(table, "IP");
+
+        for (AuditLog row : rows) {
+            addAuditCell(table, dataHora(row.getCreatedAt()), Element.ALIGN_LEFT);
+            addAuditCell(table, utilizador(row), Element.ALIGN_LEFT);
+            addAuditCell(table, row.getInstituicao() != null ? row.getInstituicao().getCodigo() : "-", Element.ALIGN_LEFT);
+            addAuditCell(table, texto(row.getAcao()), Element.ALIGN_LEFT);
+            addAuditCell(table, entidade(row), Element.ALIGN_LEFT);
+            addAuditCell(table, texto(row.getResultado()), Element.ALIGN_CENTER);
+            addAuditCell(table, texto(row.getSeveridade()), Element.ALIGN_CENTER);
+            addAuditCell(table, texto(row.getIpAddress()), Element.ALIGN_LEFT);
+        }
+
+        if (rows.isEmpty()) {
+            PdfPCell empty = bodyCell("Sem eventos de auditoria para o periodo selecionado.", Element.ALIGN_CENTER);
+            empty.setColspan(8);
+            table.addCell(empty);
+        }
+
+        document.add(table);
+        document.close();
+
+        auditar(principal, "EXPORTACAO_AUDITORIA_OPERACIONAL_PDF", "RELATORIO", "auditoria-operacional", http);
+        return out.toByteArray();
+    }
+
+    @Transactional(readOnly = true)
     public byte[] receitasRupeXlsx(UserPrincipal principal, LocalDate inicio, LocalDate fim, HttpServletRequest http) {
         int ano = fiscalYear.anoCorrente();
         LocalDate dataInicio = inicio != null ? inicio : LocalDate.of(ano, 1, 1);
@@ -269,10 +371,10 @@ public class RelatorioService {
         ministryCell.setHorizontalAlignment(Element.ALIGN_RIGHT);
         ministryCell.setVerticalAlignment(Element.ALIGN_MIDDLE);
         loadMinfinLogo().ifPresent(ministryCell::addElement);
-        Paragraph context = new Paragraph("Ministerio das Financas de Angola", new Font(Font.HELVETICA, 10, Font.BOLD, INK));
+        Paragraph context = new Paragraph("Ministerio das Financas de Angola", new Font(Font.HELVETICA, 10, Font.BOLD, MINFIN_RED));
         context.setAlignment(Element.ALIGN_RIGHT);
         ministryCell.addElement(context);
-        Paragraph subtitle = new Paragraph(reportName, new Font(Font.HELVETICA, 9, Font.NORMAL, MUTED));
+        Paragraph subtitle = new Paragraph(reportName, new Font(Font.HELVETICA, 9, Font.NORMAL, MINFIN_GOLD));
         subtitle.setAlignment(Element.ALIGN_RIGHT);
         ministryCell.addElement(subtitle);
 
@@ -287,13 +389,20 @@ public class RelatorioService {
         PdfPCell cell = new PdfPCell();
         cell.setBorder(0);
         cell.setPadding(14);
-        cell.setBackgroundColor(BLUE);
+        cell.setBackgroundColor(MINFIN_RED);
 
         Paragraph titleParagraph = new Paragraph(title, new Font(Font.HELVETICA, 18, Font.BOLD, WHITE));
         titleParagraph.setSpacingAfter(4);
         cell.addElement(titleParagraph);
-        cell.addElement(new Paragraph(subtitle, new Font(Font.HELVETICA, 9, Font.NORMAL, new Color(229, 234, 242))));
+        cell.addElement(new Paragraph(subtitle, new Font(Font.HELVETICA, 9, Font.NORMAL, new Color(255, 243, 214))));
         table.addCell(cell);
+
+        PdfPCell accent = new PdfPCell();
+        accent.setBorder(0);
+        accent.setFixedHeight(4);
+        accent.setBackgroundColor(MINFIN_GOLD);
+        table.addCell(accent);
+
         document.add(table);
     }
 
@@ -325,26 +434,57 @@ public class RelatorioService {
     }
 
     private void addRow(PdfPTable table, String label, String value) {
-        PdfPCell labelCell = new PdfPCell(new Phrase(label, new Font(Font.HELVETICA, 10, Font.BOLD, BLUE)));
-        labelCell.setBackgroundColor(MIST);
+        PdfPCell labelCell = new PdfPCell(new Phrase(label, new Font(Font.HELVETICA, 10, Font.BOLD, MINFIN_RED)));
+        labelCell.setBackgroundColor(MINFIN_RED_MIST);
         labelCell.setBorderColor(LINE);
         labelCell.setPadding(8);
         table.addCell(labelCell);
         table.addCell(bodyCell(value, Element.ALIGN_RIGHT));
     }
 
+    private void addMetric(PdfPTable table, String label, String value) {
+        PdfPCell cell = new PdfPCell();
+        cell.setBorderColor(LINE);
+        cell.setBackgroundColor(MINFIN_RED_MIST);
+        cell.setPadding(10);
+        Paragraph valueParagraph = new Paragraph(value, new Font(Font.HELVETICA, 17, Font.BOLD, MINFIN_RED));
+        valueParagraph.setSpacingAfter(3);
+        cell.addElement(valueParagraph);
+        cell.addElement(new Paragraph(label, new Font(Font.HELVETICA, 8, Font.NORMAL, MUTED)));
+        table.addCell(cell);
+    }
+
     private void addHeader(PdfPTable table, String value) {
         PdfPCell cell = new PdfPCell(new Phrase(value, new Font(Font.HELVETICA, 9, Font.BOLD, WHITE)));
         cell.setHorizontalAlignment(Element.ALIGN_LEFT);
         cell.setVerticalAlignment(Element.ALIGN_MIDDLE);
-        cell.setBackgroundColor(BLUE);
-        cell.setBorderColor(BLUE);
+        cell.setBackgroundColor(MINFIN_RED);
+        cell.setBorderColor(MINFIN_RED);
         cell.setPadding(8);
+        table.addCell(cell);
+    }
+
+    private void addAuditHeader(PdfPTable table, String value) {
+        PdfPCell cell = new PdfPCell(new Phrase(value, new Font(Font.HELVETICA, 7, Font.BOLD, WHITE)));
+        cell.setHorizontalAlignment(Element.ALIGN_LEFT);
+        cell.setVerticalAlignment(Element.ALIGN_MIDDLE);
+        cell.setBackgroundColor(MINFIN_RED);
+        cell.setBorderColor(MINFIN_RED);
+        cell.setPadding(6);
         table.addCell(cell);
     }
 
     private void addDataCell(PdfPTable table, String value, int alignment) {
         table.addCell(bodyCell(value, alignment));
+    }
+
+    private void addAuditCell(PdfPTable table, String value, int alignment) {
+        PdfPCell cell = new PdfPCell(new Phrase(value == null ? "" : value, new Font(Font.HELVETICA, 7, Font.NORMAL, INK)));
+        cell.setHorizontalAlignment(alignment);
+        cell.setVerticalAlignment(Element.ALIGN_MIDDLE);
+        cell.setBorderColor(LINE);
+        cell.setPadding(6);
+        table.addCell(cell);
     }
 
     private PdfPCell bodyCell(String value, int alignment) {
@@ -360,6 +500,29 @@ public class RelatorioService {
         NumberFormat formatter = NumberFormat.getCurrencyInstance(LOCALE_PT_AO);
         formatter.setCurrency(Currency.getInstance("AOA"));
         return formatter.format(value == null ? BigDecimal.ZERO : value);
+    }
+
+    private String dataHora(Instant value) {
+        return value == null ? "-" : EMITIDO_EM.format(value);
+    }
+
+    private String utilizador(AuditLog log) {
+        if (log.getUsuario() == null) {
+            return "Sistema";
+        }
+        String nome = texto(log.getUsuario().getNome());
+        String email = texto(log.getUsuario().getEmail());
+        return email.equals("-") ? nome : nome + "\n" + email;
+    }
+
+    private String entidade(AuditLog log) {
+        String entidade = texto(log.getEntidade());
+        String id = texto(log.getEntidadeId());
+        return id.equals("-") ? entidade : entidade + " #" + id;
+    }
+
+    private String texto(String value) {
+        return value == null || value.isBlank() ? "-" : value;
     }
 
     private static class ReportFooter extends PdfPageEventHelper {

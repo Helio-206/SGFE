@@ -64,6 +64,7 @@ export function ReceitaForm({ receita, onSuccess }: ReceitaFormProps) {
     retry: false
   });
   const isAdmin = user?.role === "ADMIN";
+  const canRequestRetroAuthorization = user?.role === "ADMIN" || user?.role === "GESTOR";
 
   const { data: instituicoes } = useQuery({
     queryKey: ["instituicoes"],
@@ -256,7 +257,7 @@ export function ReceitaForm({ receita, onSuccess }: ReceitaFormProps) {
           </div>
           </div>
 
-          {isAdmin ? (
+          {canRequestRetroAuthorization ? (
             <div className="space-y-3 rounded-md border bg-white p-3">
               <div className="flex items-start gap-3 border-b border-border pb-3">
                 <div className="rounded-md bg-institutional-mist p-2 text-institutional-blue">
@@ -264,24 +265,30 @@ export function ReceitaForm({ receita, onSuccess }: ReceitaFormProps) {
                 </div>
                 <div>
                   <h3 className="text-sm font-bold text-institutional-ink">Receita retroativa</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">Use apenas autorizacoes aprovadas ou envie uma justificacao para auditoria.</p>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    {isAdmin
+                      ? "Use apenas autorizacoes aprovadas ou envie uma justificacao para auditoria."
+                      : "Envie uma justificacao para auditoria; a criacao retroativa sera concluida pelo Admin apos aprovacao."}
+                  </p>
                 </div>
               </div>
-              <div>
-                <Label>Autorizacao retroativa aprovada</Label>
-                <select
-                  value={selectedAutorizacaoId}
-                  onChange={(e) => setSelectedAutorizacaoId(e.target.value)}
-                  className={selectClassName}
-                >
-                  <option value="">Sem autorizacao retroativa</option>
-                  {autorizacoesDisponiveis.map((autorizacao) => (
-                    <option key={autorizacao.id} value={autorizacao.id}>
-                      #{autorizacao.id} - {autorizacao.codigoUo} - {autorizacao.dataRegistro} ({autorizacao.diasAtraso} dias)
-                    </option>
-                  ))}
-                </select>
-              </div>
+              {isAdmin ? (
+                <div>
+                  <Label>Autorizacao retroativa aprovada</Label>
+                  <select
+                    value={selectedAutorizacaoId}
+                    onChange={(e) => setSelectedAutorizacaoId(e.target.value)}
+                    className={selectClassName}
+                  >
+                    <option value="">Sem autorizacao retroativa</option>
+                    {autorizacoesDisponiveis.map((autorizacao) => (
+                      <option key={autorizacao.id} value={autorizacao.id}>
+                        #{autorizacao.id} - {autorizacao.codigoUo} - {autorizacao.dataRegistro} ({autorizacao.diasAtraso} dias)
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              ) : null}
 
               <div className="grid gap-3 lg:grid-cols-[220px_1fr_auto]">
                 <div>

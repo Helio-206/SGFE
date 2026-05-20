@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import {
@@ -17,9 +18,9 @@ import {
   WalletCards
 } from "lucide-react";
 import { apiFetch } from "@/lib/api";
+import { MINFIN_LOGO_URL } from "@/lib/branding";
 import type { Role } from "@/lib/rbac";
 import { cn } from "@/lib/utils";
-import { InstitutionalBrand } from "./institutional-brand";
 import { LogoutButton } from "./logout-button";
 
 const nav = [
@@ -61,22 +62,37 @@ export function AppShell({ title, children }: { title: string; children: React.R
 
   return (
     <div className="min-h-screen bg-[#f5f7fa]">
-      <aside className="fixed inset-y-0 left-0 hidden w-72 overflow-hidden border-r border-white/60 bg-institutional-deep text-white lg:block">
-        <div className="absolute inset-y-0 right-0 w-px bg-institutional-gold/30" />
-        <div className="relative border-b border-white/10 px-5 py-5">
-          <InstitutionalBrand compact />
-        </div>
-        <div className="relative px-4 pt-5">
-          <div className="rounded-lg border border-white/10 bg-white/5 p-4 text-sm text-slate-200 shadow-2xl shadow-black/20">
-            <p className="text-[11px] font-semibold uppercase text-institutional-gold">Sessao ativa</p>
-            <p className="mt-3 font-semibold text-white">{user?.nome ?? "Utilizador SGFE"}</p>
-            <p className="mt-1 text-xs text-slate-300">{user?.role ?? "PERFIL"}{user?.codigoUo ? ` | ${user.codigoUo}` : ""}</p>
+      <aside className="fixed inset-y-0 left-0 hidden w-[276px] flex-col border-r border-border bg-white text-institutional-ink lg:flex">
+        <div className="border-b border-border px-5 py-5">
+          <div className="space-y-3">
+            <Image
+              src={MINFIN_LOGO_URL}
+              alt="Logo oficial do Ministerio das Financas de Angola"
+              width={184}
+              height={30}
+              className="h-auto max-w-[184px] object-contain"
+              unoptimized
+              priority
+            />
+            <div className="border-l-2 border-institutional-red pl-3">
+              <p className="text-[11px] font-semibold uppercase text-institutional-gold">SGFE</p>
+              <p className="text-sm font-bold text-institutional-ink">Gestao das Financas</p>
+            </div>
           </div>
         </div>
-        <nav className="relative space-y-5 px-3 py-5">
+        <div className="px-5 py-4">
+          <div className="border-l-2 border-institutional-red pl-3">
+            <p className="text-[11px] font-semibold uppercase text-muted-foreground">Sessao</p>
+            <p className="mt-1 truncate text-sm font-semibold text-institutional-ink">{user?.nome ?? "Utilizador SGFE"}</p>
+            <p className="mt-1 text-xs text-slate-500">
+              {user?.role ?? "PERFIL"}{user?.codigoUo ? ` / ${user.codigoUo}` : ""}
+            </p>
+          </div>
+        </div>
+        <nav className="flex-1 space-y-5 overflow-y-auto px-3 py-2 pb-5">
           {Object.entries(groupedNav).map(([section, items]) => (
             <div key={section}>
-              <div className="px-3 pb-2 text-[10px] font-bold uppercase text-slate-400">{section}</div>
+              <div className="px-3 pb-2 text-[10px] font-bold uppercase text-slate-500">{section}</div>
               <div className="space-y-1">
                 {items.map((item) => {
                   const active = pathname === item.href || (item.href !== "/dashboard" && pathname.startsWith(`${item.href}/`));
@@ -85,11 +101,11 @@ export function AppShell({ title, children }: { title: string; children: React.R
                       key={item.href}
                       href={item.href}
                       className={cn(
-                        "flex items-center gap-3 rounded-lg px-3 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10 hover:text-white",
-                        active && "bg-white text-institutional-deep shadow-institutional hover:bg-white"
+                        "group flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-slate-600 transition hover:bg-slate-50 hover:text-institutional-ink",
+                        active && "bg-institutional-red text-white shadow-line hover:bg-institutional-red hover:text-white"
                       )}
                     >
-                      <item.icon className={cn("h-4 w-4", active ? "text-institutional-blue" : "text-institutional-gold")} />
+                      <item.icon className={cn("h-4 w-4", active ? "text-white" : "text-slate-500 group-hover:text-institutional-red")} />
                       {item.label}
                     </Link>
                   );
@@ -98,8 +114,12 @@ export function AppShell({ title, children }: { title: string; children: React.R
             </div>
           ))}
         </nav>
+        <div className="border-t border-border bg-slate-50 px-5 py-4">
+          <p className="text-[11px] font-semibold uppercase text-slate-500">Ambiente</p>
+          <p className="mt-1 text-sm font-semibold text-institutional-ink">Africa/Luanda</p>
+        </div>
       </aside>
-      <div className="lg:pl-72">
+      <div className="lg:pl-[276px]">
         <header className="sticky top-0 z-20 border-b border-white/70 bg-white/90 backdrop-blur-xl">
           <div className="flex flex-col gap-4 px-5 py-4 lg:px-8">
             <div className="flex items-start justify-between gap-5">
