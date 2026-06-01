@@ -61,9 +61,9 @@ export function AppShell({ title, children }: { title: string; children: React.R
   }, {});
 
   return (
-    <div className="min-h-screen bg-[#f5f7fa]">
-      <aside className="fixed inset-y-0 left-0 hidden w-[276px] flex-col border-r border-border bg-white text-institutional-ink lg:flex">
-        <div className="border-b border-border px-5 py-5">
+    <div className="min-h-screen bg-background text-institutional-ink">
+      <aside className="fixed inset-y-0 left-0 hidden w-[276px] flex-col border-r border-border/75 bg-surface/95 text-institutional-ink shadow-quiet backdrop-blur-xl lg:flex">
+        <div className="border-b border-border/75 px-5 py-5">
           <div className="space-y-3">
             <Image
               src={MINFIN_LOGO_URL}
@@ -74,17 +74,17 @@ export function AppShell({ title, children }: { title: string; children: React.R
               unoptimized
               priority
             />
-            <div className="border-l-2 border-institutional-red pl-3">
+            <div className="border-l-2 border-institutional-red/80 pl-3">
               <p className="text-[11px] font-semibold uppercase text-institutional-gold">SGFE</p>
               <p className="text-sm font-bold text-institutional-ink">Gestao das Financas</p>
             </div>
           </div>
         </div>
         <div className="px-5 py-4">
-          <div className="border-l-2 border-institutional-red pl-3">
+          <div className="rounded-md border border-border/70 bg-surface-strong/60 p-3 shadow-line">
             <p className="text-[11px] font-semibold uppercase text-muted-foreground">Sessao</p>
             <p className="mt-1 truncate text-sm font-semibold text-institutional-ink">{user?.nome ?? "Utilizador SGFE"}</p>
-            <p className="mt-1 text-xs text-slate-500">
+            <p className="mt-1 text-xs text-muted-foreground">
               {user?.role ?? "PERFIL"}{user?.codigoUo ? ` / ${user.codigoUo}` : ""}
             </p>
           </div>
@@ -92,7 +92,7 @@ export function AppShell({ title, children }: { title: string; children: React.R
         <nav className="flex-1 space-y-5 overflow-y-auto px-3 py-2 pb-5">
           {Object.entries(groupedNav).map(([section, items]) => (
             <div key={section}>
-              <div className="px-3 pb-2 text-[10px] font-bold uppercase text-slate-500">{section}</div>
+              <div className="px-3 pb-2 text-[10px] font-bold uppercase text-muted-foreground">{section}</div>
               <div className="space-y-1">
                 {items.map((item) => {
                   const active = pathname === item.href || (item.href !== "/dashboard" && pathname.startsWith(`${item.href}/`));
@@ -101,11 +101,11 @@ export function AppShell({ title, children }: { title: string; children: React.R
                       key={item.href}
                       href={item.href}
                       className={cn(
-                        "group flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-slate-600 transition hover:bg-slate-50 hover:text-institutional-ink",
-                        active && "bg-institutional-red text-white shadow-line hover:bg-institutional-red hover:text-white"
+                        "group flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-muted-foreground transition hover:bg-surface-strong/75 hover:text-institutional-ink",
+                        active && "bg-institutional-blue text-white shadow-quiet hover:bg-institutional-blue hover:text-white"
                       )}
                     >
-                      <item.icon className={cn("h-4 w-4", active ? "text-white" : "text-slate-500 group-hover:text-institutional-red")} />
+                      <item.icon className={cn("h-4 w-4", active ? "text-institutional-gold" : "text-muted-foreground group-hover:text-institutional-red")} />
                       {item.label}
                     </Link>
                   );
@@ -114,22 +114,25 @@ export function AppShell({ title, children }: { title: string; children: React.R
             </div>
           ))}
         </nav>
-        <div className="border-t border-border bg-slate-50 px-5 py-4">
-          <p className="text-[11px] font-semibold uppercase text-slate-500">Ambiente</p>
-          <p className="mt-1 text-sm font-semibold text-institutional-ink">Africa/Luanda</p>
+        <div className="border-t border-border/75 bg-surface-muted/50 px-5 py-4">
+          <p className="text-[11px] font-semibold uppercase text-muted-foreground">Ambiente</p>
+          <p className="mt-1 flex items-center gap-2 text-sm font-semibold text-institutional-ink">
+            <span className="h-2 w-2 rounded-full bg-emerald-500" />
+            SGFE
+          </p>
         </div>
       </aside>
       <div className="lg:pl-[276px]">
-        <header className="sticky top-0 z-20 border-b border-white/70 bg-white/90 backdrop-blur-xl">
+        <header className="sticky top-0 z-20 border-b border-border/70 bg-surface/90 backdrop-blur-xl">
           <div className="flex flex-col gap-4 px-5 py-4 lg:px-8">
             <div className="flex items-start justify-between gap-5">
               <div>
                 <p className="text-xs font-semibold uppercase text-institutional-gold">Centro operativo SGFE</p>
                 <h1 className="mt-1 text-2xl font-bold text-institutional-ink">{title}</h1>
-                <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-600">{user?.instituicao ?? "Ministerio das Financas"} | Africa/Luanda</p>
+                <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">{user?.instituicao ?? "Ministerio das Financas"}</p>
               </div>
               <div className="flex flex-col items-end gap-3">
-                <div className="hidden rounded-lg border border-institutional-gold/30 bg-amber-50 px-4 py-3 text-right text-xs text-slate-600 md:block">
+                <div className="hidden rounded-lg border border-institutional-gold/30 bg-[#fff8df]/70 px-4 py-3 text-right text-xs text-muted-foreground shadow-line md:block">
                   <div className="font-semibold text-institutional-ink">{user?.role ?? "SGFE"}</div>
                   <div>{new Intl.DateTimeFormat("pt-AO", { dateStyle: "medium" }).format(new Date())}</div>
                 </div>
@@ -144,7 +147,7 @@ export function AppShell({ title, children }: { title: string; children: React.R
                     key={item.href}
                     href={item.href}
                     className={cn(
-                      "whitespace-nowrap rounded-md border border-border bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-institutional-gold/40 hover:text-institutional-ink",
+                      "whitespace-nowrap rounded-md border border-border bg-surface-strong/80 px-4 py-2 text-sm font-medium text-institutional-ink transition hover:border-institutional-gold/40",
                       active && "border-institutional-blue bg-institutional-blue text-white hover:text-white"
                     )}
                   >

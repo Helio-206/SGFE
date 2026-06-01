@@ -26,7 +26,7 @@ const fonteOptions: Array<{ value: FonteReceita; label: string }> = [
   { value: "PATRIMONIAL", label: "Patrimonial" }
 ];
 
-const selectClassName = "focus-ring mt-1 h-10 w-full rounded-md border border-input bg-white px-3 text-sm text-institutional-ink shadow-line hover:border-institutional-blue/35";
+const selectClassName = "focus-ring mt-1 h-10 w-full rounded-md border border-input bg-surface-strong/90 px-3 text-sm text-institutional-ink shadow-line hover:border-institutional-blue/40 disabled:cursor-not-allowed disabled:bg-surface-muted disabled:text-muted-foreground";
 
 function todayInputValue() {
   const now = new Date();
@@ -182,8 +182,8 @@ export function ReceitaForm({ receita, onSuccess }: ReceitaFormProps) {
       ) : null}
 
       {isOpen && (
-        <div className="space-y-4 rounded-lg border border-border bg-white p-4 shadow-line">
-          <div className="border-b border-border pb-3">
+        <div className="space-y-4 rounded-lg border border-border/80 bg-surface/95 p-4 shadow-quiet">
+          <div className="border-b border-border/75 pb-3">
             <h2 className="text-sm font-bold text-institutional-ink">Registar receita RUPE</h2>
             <p className="mt-1 text-sm text-muted-foreground">A data corrente e assumida automaticamente; registos retroativos exigem autorizacao.</p>
           </div>
@@ -258,8 +258,8 @@ export function ReceitaForm({ receita, onSuccess }: ReceitaFormProps) {
           </div>
 
           {canRequestRetroAuthorization ? (
-            <div className="space-y-3 rounded-md border bg-white p-3">
-              <div className="flex items-start gap-3 border-b border-border pb-3">
+            <div className="space-y-3 rounded-md border border-border/80 bg-surface-strong/70 p-3">
+              <div className="flex items-start gap-3 border-b border-border/75 pb-3">
                 <div className="rounded-md bg-institutional-mist p-2 text-institutional-blue">
                   <FileCheck2 className="h-4 w-4" />
                 </div>

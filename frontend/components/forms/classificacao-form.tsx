@@ -20,7 +20,7 @@ const emptyForm = {
   tipo: ""
 };
 
-const selectClassName = "focus-ring mt-1 h-10 w-full rounded-md border border-input bg-white px-3 text-sm text-institutional-ink shadow-line hover:border-institutional-blue/35";
+const selectClassName = "focus-ring mt-1 h-10 w-full rounded-md border border-input bg-surface-strong/90 px-3 text-sm text-institutional-ink shadow-line hover:border-institutional-blue/40";
 
 export function ClassificacaoForm({ classificacao, onCancel, onSuccess }: ClassificacaoFormProps) {
   const queryClient = useQueryClient();
@@ -87,8 +87,8 @@ export function ClassificacaoForm({ classificacao, onCancel, onSuccess }: Classi
       ) : null}
 
       {isOpen && (
-        <div className="space-y-4 rounded-lg border border-border bg-white p-4 shadow-line">
-          <div className="border-b border-border pb-3">
+        <div className="space-y-4 rounded-lg border border-border/80 bg-surface/95 p-4 shadow-quiet">
+          <div className="border-b border-border/75 pb-3">
             <h2 className="text-sm font-bold text-institutional-ink">{isEditing ? "Editar classificacao economica" : "Nova classificacao economica"}</h2>
             <p className="mt-1 text-sm text-muted-foreground">Codigos consistentes facilitam o enquadramento de receitas e despesas.</p>
           </div>

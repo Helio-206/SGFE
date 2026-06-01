@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, FileCheck2, Landmark, Layers3, ShieldCheck } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { PublicHeader } from "@/components/layout/public-header";
 import { Button } from "@/components/ui/button";
@@ -33,9 +34,17 @@ const partners = [
 
 export default function LandingPage() {
   return (
-    <main className="bg-[#f6f7f4] text-institutional-ink">
+    <main className="bg-background text-institutional-ink">
       <section className="institutional-hero relative min-h-[100vh] overflow-hidden text-white">
         <PublicHeader />
+        <Image
+          src="/assets/insignia-republica-angola.png"
+          alt=""
+          width={560}
+          height={620}
+          className="pointer-events-none absolute right-[-7rem] top-24 hidden max-h-[70vh] w-auto opacity-20 xl:block"
+          priority
+        />
         <div className="mx-auto flex min-h-[100vh] max-w-7xl items-center px-5 pb-16 pt-32 lg:pt-36">
           <motion.div
             initial={{ opacity: 0, y: 18 }}
@@ -45,10 +54,10 @@ export default function LandingPage() {
           >
             <p className="text-sm font-semibold uppercase text-institutional-gold">Infraestrutura operacional do Estado</p>
             <h1 className="mt-5 max-w-4xl text-5xl font-bold leading-[1.02] md:text-7xl">
-              Execucao financeira publica com leitura nacional, controlo institucional e prova auditavel.
+              SGFE
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-100/92">
-              O SGFE organiza orcamento, receita, despesa e auditoria num unico percurso, reduz a friccao operacional e reforca a confianca na informacao financeira do Estado.
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-100/90">
+              Sistema de Gestao das Financas do Estado para execucao financeira publica com leitura nacional, controlo institucional e prova auditavel.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild variant="gold" size="lg">
@@ -67,7 +76,7 @@ export default function LandingPage() {
                 { value: "RBAC", label: "governanca", detail: "permissoes por papel e por contexto" },
                 { value: "24/7", label: "rastreabilidade", detail: "eventos criticos persistidos para auditoria" }
               ].map((item) => (
-                <div key={item.label} className="rounded-lg border border-white/10 bg-white/8 p-5 backdrop-blur-md">
+                <div key={item.label} className="rounded-lg border border-white/10 bg-white/10 p-5 backdrop-blur-md">
                   <div className="text-3xl font-bold text-white">{item.value}</div>
                   <div className="mt-3 text-sm font-semibold uppercase text-institutional-gold">{item.label}</div>
                   <p className="mt-2 text-sm leading-6 text-slate-200">{item.detail}</p>
@@ -78,7 +87,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section className="border-b border-black/5 bg-[#ebece7] py-16">
+      <section className="border-b border-black/5 bg-surface-muted/70 py-16">
         <div className="mx-auto grid max-w-7xl gap-8 px-5 md:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="text-xs font-bold uppercase text-institutional-gold">Desafio operacional</p>
@@ -98,7 +107,7 @@ export default function LandingPage() {
           </div>
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {flow.map((item) => (
-              <div key={item.step} className="rounded-lg border border-black/5 bg-white/80 p-6 shadow-[0_18px_55px_rgba(8,26,45,0.08)]">
+              <div key={item.step} className="rounded-lg border border-black/5 bg-surface-strong/75 p-6 shadow-[0_18px_55px_rgba(8,26,45,0.08)]">
                 <div className="text-sm font-semibold uppercase text-institutional-gold">Etapa {item.step}</div>
                 <h3 className="mt-4 text-2xl font-bold text-institutional-ink">{item.title}</h3>
                 <p className="mt-3 leading-7 text-slate-700">{item.text}</p>
@@ -108,7 +117,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="plataforma" className="border-y border-black/5 bg-white py-20">
+      <section id="plataforma" className="border-y border-black/5 bg-surface/95 py-20">
         <div className="mx-auto max-w-7xl px-5">
           <div className="flex items-end justify-between gap-5">
             <div>
@@ -118,7 +127,7 @@ export default function LandingPage() {
           </div>
           <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {modules.map((module) => (
-              <div key={module.title} className="rounded-lg border border-black/5 bg-[#fbfaf7] p-6 shadow-[0_20px_65px_rgba(8,26,45,0.06)]">
+              <div key={module.title} className="rounded-lg border border-black/5 bg-surface-strong/75 p-6 shadow-[0_20px_65px_rgba(8,26,45,0.06)]">
                 <CheckCircle2 className="h-5 w-5 text-institutional-gold" />
                 <div className="mt-4 text-xl font-semibold">{module.title}</div>
                 <p className="mt-3 leading-7 text-slate-700">{module.text}</p>
@@ -155,7 +164,7 @@ export default function LandingPage() {
               {partners.map((partner) => (
                 <span
                   key={partner}
-                  className="rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-institutional-ink shadow-[0_10px_30px_rgba(8,26,45,0.06)]"
+                  className="rounded-full border border-black/10 bg-surface-strong/75 px-5 py-3 text-sm font-semibold text-institutional-ink shadow-[0_10px_30px_rgba(8,26,45,0.06)]"
                 >
                   {partner}
                 </span>
@@ -187,7 +196,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <footer className="border-t border-black/5 bg-slate-50 py-8">
+      <footer className="border-t border-black/5 bg-surface-muted/70 py-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-5 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between">
           <span>SGFE - Sistema de Gestao das Financas do Estado</span>
           <span>Republica de Angola | Ministerio das Financas</span>

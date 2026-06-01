@@ -47,6 +47,9 @@ public class AuthService {
         @Value("${sgfe.security.access-token-minutes}") long accessTokenMinutes,
         @Value("${sgfe.security.refresh-token-days}") long refreshTokenDays
     ) {
+        if (accessTokenMinutes <= 0 || refreshTokenDays <= 0) {
+            throw new IllegalStateException("Tempos de sessao SGFE devem ser maiores que zero.");
+        }
         this.authenticationManager = authenticationManager;
         this.users = users;
         this.refreshTokens = refreshTokens;

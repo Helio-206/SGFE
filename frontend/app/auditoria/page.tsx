@@ -205,7 +205,7 @@ export default function AuditoriaPage() {
           />
         </div>
         <div className="space-y-3">
-          <div className="flex flex-col gap-3 rounded-lg border border-border bg-white p-4 shadow-line sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-col gap-3 rounded-lg border border-border/80 bg-surface/95 p-4 shadow-quiet sm:flex-row sm:items-center sm:justify-between">
             <div>
               <h2 className="text-base font-bold text-institutional-ink">Relatorio de eventos e acessos</h2>
               <p className="mt-1 text-sm text-muted-foreground">Entradas, accoes executadas, resultados, severidade e IP de origem.</p>

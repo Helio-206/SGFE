@@ -21,7 +21,7 @@ export default function RecuperarSenhaPage() {
   async function submit(values: Values) {
     const response = await fetch(`${API_BASE_URL}/auth/forgot-password`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", "X-Requested-With": "XMLHttpRequest" },
       body: JSON.stringify(values)
     });
     const data = await response.json();

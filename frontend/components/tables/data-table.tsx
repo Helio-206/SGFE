@@ -114,7 +114,7 @@ export function DataTable<TData, TValue>({
 
   return (
     <div className="space-y-4">
-      <div className="rounded-lg border border-border bg-white p-4 shadow-line">
+      <div className="rounded-lg border border-border/80 bg-surface/95 p-4 shadow-quiet backdrop-blur-sm">
         <div className="flex flex-col gap-4 xl:flex-row xl:items-end xl:justify-between">
           <div className="grid flex-1 gap-3 md:grid-cols-2 xl:grid-cols-[minmax(260px,1.35fr)_repeat(3,minmax(170px,1fr))]">
             <div className="space-y-2">
@@ -153,10 +153,10 @@ export function DataTable<TData, TValue>({
           </div>
         </div>
       </div>
-      <div className="overflow-hidden rounded-lg border border-border bg-white shadow-line">
+      <div className="overflow-hidden rounded-lg border border-border/80 bg-surface/95 shadow-quiet">
         <div className="overflow-x-auto">
         <table className="min-w-[860px] text-sm">
-          <thead className="bg-institutional-mist/80">
+          <thead className="bg-surface-muted/80">
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>
                 {headerGroup.headers.map((header) => (
@@ -181,10 +181,10 @@ export function DataTable<TData, TValue>({
               </tr>
             ))}
           </thead>
-          <tbody className="divide-y divide-border">
+          <tbody className="divide-y divide-border/75">
             {rows.length ? (
               rows.map((row) => (
-                <tr key={row.id} className="transition-colors hover:bg-slate-50">
+                <tr key={row.id} className="transition-colors hover:bg-surface-muted/50">
                   {row.getVisibleCells().map((cell) => (
                     <td key={cell.id} className="px-4 py-3 align-middle text-institutional-ink">
                       {flexRender(cell.column.columnDef.cell, cell.getContext())}
@@ -203,7 +203,7 @@ export function DataTable<TData, TValue>({
         </table>
         </div>
       </div>
-      <div className="flex flex-col gap-3 rounded-lg border border-border bg-white px-4 py-3 text-sm text-muted-foreground shadow-line sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-3 rounded-lg border border-border/80 bg-surface/95 px-4 py-3 text-sm text-muted-foreground shadow-quiet sm:flex-row sm:items-center sm:justify-between">
         <span>
           Pagina {table.getState().pagination.pageIndex + 1} de {Math.max(table.getPageCount(), 1)}
         </span>
@@ -243,7 +243,7 @@ function FilterControl<TData>({
           id={`${tableId}-filter-${filter.id}`}
           value={values[filter.id] ?? ""}
           onChange={(event) => onChange(filter.id, event.target.value)}
-          className="focus-ring h-10 w-full rounded-md border border-input bg-white px-3 text-sm text-institutional-ink shadow-line"
+          className="focus-ring h-10 w-full rounded-md border border-input bg-surface-strong/90 px-3 text-sm text-institutional-ink shadow-line"
         >
           <option value="">{filter.placeholder ?? "Todos"}</option>
           {(filter.options ?? []).map((option) => (

@@ -5,7 +5,7 @@ import { InstitutionalBrand } from "./institutional-brand";
 
 export function PublicHeader() {
   return (
-    <header className="fixed left-0 right-0 top-0 z-30 border-b border-white/10 bg-[#071b33]/72 backdrop-blur-xl">
+    <header className="fixed left-0 right-0 top-0 z-30 border-b border-white/10 bg-[#071b33]/75 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4">
         <InstitutionalBrand compact inverted />
         <div className="hidden items-center gap-6 text-sm font-medium text-slate-200 md:flex">

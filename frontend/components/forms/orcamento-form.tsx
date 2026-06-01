@@ -13,7 +13,7 @@ interface OrcamentoFormProps {
   onSuccess?: () => void;
 }
 
-const selectClassName = "focus-ring mt-1 h-10 w-full rounded-md border border-input bg-white px-3 text-sm text-institutional-ink shadow-line hover:border-institutional-blue/35";
+const selectClassName = "focus-ring mt-1 h-10 w-full rounded-md border border-input bg-surface-strong/90 px-3 text-sm text-institutional-ink shadow-line hover:border-institutional-blue/40";
 
 export function OrcamentoForm({ orcamento, onSuccess }: OrcamentoFormProps) {
   const queryClient = useQueryClient();
@@ -62,8 +62,8 @@ export function OrcamentoForm({ orcamento, onSuccess }: OrcamentoFormProps) {
       ) : null}
 
       {isOpen && (
-        <div className="space-y-4 rounded-lg border border-border bg-white p-4 shadow-line">
-          <div className="border-b border-border pb-3">
+        <div className="space-y-4 rounded-lg border border-border/80 bg-surface/95 p-4 shadow-quiet">
+          <div className="border-b border-border/75 pb-3">
             <h2 className="text-sm font-bold text-institutional-ink">{orcamento ? "Editar tecto orcamental" : "Novo tecto orcamental"}</h2>
             <p className="mt-1 text-sm text-muted-foreground">O valor definido alimenta o controlo de saldo e execucao da UO.</p>
           </div>

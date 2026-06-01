@@ -91,7 +91,7 @@ export default function RelatoriosPage() {
   return (
     <AppShell title="Relatorios financeiros">
       <div className="space-y-5">
-        <div className="rounded-lg border border-border bg-white p-4 shadow-line">
+        <div className="rounded-lg border border-border/80 bg-surface/95 p-4 shadow-quiet">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <div className="flex items-center gap-2 text-xs font-semibold uppercase text-muted-foreground">

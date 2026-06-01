@@ -9,7 +9,6 @@ import { z } from "zod";
 import { FormField } from "@/components/forms/form-field";
 import { InstitutionalBrand } from "@/components/layout/institutional-brand";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { API_BASE_URL } from "@/lib/api";
 
@@ -21,7 +20,7 @@ const schema = z.object({
 type LoginValues = z.infer<typeof schema>;
 
 function resolveNextPath(nextPath?: string) {
-  if (nextPath && nextPath.startsWith("/")) {
+  if (nextPath && nextPath.startsWith("/") && !nextPath.startsWith("//") && !nextPath.includes("\\")) {
     return nextPath;
   }
 
@@ -57,36 +56,35 @@ export function LoginPageClient({ nextPath }: { nextPath?: string }) {
   }
 
   return (
-    <main className="min-h-screen bg-[#f4f6f8] px-5 py-10">
-      <section className="mx-auto grid min-h-[calc(100vh-5rem)] w-full max-w-6xl overflow-hidden rounded-lg border border-border bg-white shadow-institutional lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="flex flex-col justify-between bg-institutional-deep p-6 text-white md:p-8">
+    <main className="min-h-screen bg-background px-5 py-8 md:py-10">
+      <section className="mx-auto grid min-h-[calc(100vh-5rem)] w-full max-w-6xl overflow-hidden rounded-lg border border-border/75 bg-surface/95 shadow-institutional lg:grid-cols-[0.92fr_1.08fr]">
+        <div className="flex flex-col justify-between bg-[linear-gradient(145deg,#071b33_0%,#0b3154_52%,#0e6b6b_100%)] p-6 text-white md:p-8">
           <div>
             <InstitutionalBrand compact inverted />
             <div className="mt-12 max-w-md">
               <p className="text-xs font-bold uppercase text-institutional-gold">Acesso institucional</p>
               <h1 className="mt-4 text-3xl font-bold leading-tight md:text-4xl">Sistema de Gestao das Financas do Estado</h1>
-              <p className="mt-4 text-sm leading-6 text-slate-300">
+              <p className="mt-4 text-sm leading-6 text-slate-200">
                 Ambiente reservado para utilizadores autorizados do circuito financeiro publico.
               </p>
             </div>
           </div>
-          <div className="mt-10 rounded-lg border border-white/10 bg-white/5 p-4">
+          <div className="mt-10 rounded-lg border border-white/10 bg-white/10 p-4 backdrop-blur-sm">
             <div className="flex items-center gap-3">
               <ShieldCheck className="h-5 w-5 text-institutional-gold" />
               <div>
                 <div className="text-sm font-semibold text-white">Sessao protegida</div>
-                <div className="text-xs text-slate-300">Africa/Luanda | SGFE</div>
+                <div className="text-xs text-slate-200">SGFE</div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center p-6 md:p-10">
-          <Card className="w-full max-w-md border-0 bg-transparent shadow-none">
-            <CardContent className="p-0">
+        <div className="flex items-center justify-center bg-surface-muted/50 p-6 md:p-10">
+          <div className="w-full max-w-md rounded-lg border border-border/80 bg-surface-strong/75 p-5 shadow-quiet md:p-6">
             <div className="mb-7">
               <p className="text-xs font-bold uppercase text-institutional-gold">SGFE</p>
               <h2 className="mt-2 text-3xl font-bold text-institutional-ink">Iniciar sessao</h2>
-              <p className="mt-3 text-sm leading-6 text-slate-600">Use a sua credencial institucional para continuar.</p>
+              <p className="mt-3 text-sm leading-6 text-muted-foreground">Use a sua credencial institucional para continuar.</p>
             </div>
             {error ? <div className="mb-4 rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm font-medium text-red-800">{error}</div> : null}
             <form className="space-y-4" onSubmit={form.handleSubmit(onSubmit)}>
@@ -115,11 +113,10 @@ export function LoginPageClient({ nextPath }: { nextPath?: string }) {
               <span className="mx-2">|</span>
               <Link href="/" className="font-semibold text-institutional-blue hover:underline">Voltar a pagina institucional</Link>
             </div>
-            <div className="mt-6 border-t border-slate-200 pt-4 text-center text-xs font-medium uppercase text-slate-500">
+            <div className="mt-6 border-t border-border/75 pt-4 text-center text-xs font-medium uppercase text-muted-foreground">
               Ministerio das Financas | Plataforma SGFE
             </div>
-          </CardContent>
-        </Card>
+          </div>
         </div>
       </section>
     </main>

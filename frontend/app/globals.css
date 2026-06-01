@@ -3,17 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --background: 210 33% 98%;
-  --foreground: 224 18% 10%;
+  --background: 208 28% 94%;
+  --foreground: 222 18% 12%;
+  --surface: 205 34% 97%;
+  --surface-strong: 0 0% 100%;
+  --surface-muted: 210 25% 92%;
   --primary: 211 67% 21%;
   --primary-foreground: 0 0% 100%;
-  --muted: 211 28% 93%;
-  --muted-foreground: 218 13% 38%;
+  --muted: 210 22% 90%;
+  --muted-foreground: 218 13% 36%;
   --destructive: 352 82% 38%;
   --destructive-foreground: 0 0% 100%;
-  --border: 215 22% 86%;
-  --input: 215 22% 86%;
-  --ring: 43 67% 47%;
+  --border: 214 19% 82%;
+  --input: 214 19% 82%;
+  --ring: 43 67% 46%;
   --font-display: "Inter", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Inter", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
 }
@@ -28,9 +31,12 @@ html {
 
 body {
   font-family: var(--font-body);
-  background: hsl(var(--background));
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, #edf3f6 0%, #f7f8f4 46%, #eef3f6 100%);
   color: hsl(var(--foreground));
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  text-rendering: optimizeLegibility;
 }
 
 h1,
@@ -43,7 +49,7 @@ h3,
 
 .institutional-hero {
   background:
-    linear-gradient(135deg, #071b33 0%, #0a2846 45%, #10375b 100%);
+    linear-gradient(135deg, #071b33 0%, #0b2c4c 48%, #0f5c61 100%);
 }
 
 .fine-grid {
@@ -54,7 +60,12 @@ h3,
 }
 
 .focus-ring {
-  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-institutional-gold focus-visible:ring-offset-2;
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-institutional-gold focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+}
+
+::selection {
+  background: rgba(201, 162, 39, 0.28);
+  color: hsl(var(--foreground));
 }
 
 .partner-seal {

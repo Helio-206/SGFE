@@ -1,10 +1,14 @@
 package ao.gov.minfin.sgfe.auth;
 
+import jakarta.servlet.http.HttpServletResponse;
+import java.nio.charset.StandardCharsets;
+import java.time.Instant;
 import java.util.Arrays;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.MediaType;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -26,15 +30,18 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 @EnableMethodSecurity
 public class SecurityConfig {
     private final JwtAuthenticationFilter jwtFilter;
+    private final BrowserRequestGuardFilter browserRequestGuardFilter;
     private final SgfeUserDetailsService userDetailsService;
     private final String allowedOrigins;
 
     public SecurityConfig(
         JwtAuthenticationFilter jwtFilter,
+        BrowserRequestGuardFilter browserRequestGuardFilter,
         SgfeUserDetailsService userDetailsService,
         @Value("${sgfe.cors.allowed-origins}") String allowedOrigins
     ) {
         this.jwtFilter = jwtFilter;
+        this.browserRequestGuardFilter = browserRequestGuardFilter;
         this.userDetailsService = userDetailsService;
         this.allowedOrigins = allowedOrigins;
     }
@@ -44,10 +51,17 @@ public class SecurityConfig {
         return http
             .csrf(AbstractHttpConfigurer::disable)
             .cors(cors -> cors.configurationSource(corsConfigurationSource()))
-            .headers(headers -> headers
-                .contentSecurityPolicy(csp -> csp.policyDirectives("default-src 'none'; frame-ancestors 'none'; base-uri 'none'"))
-                .referrerPolicy(policy -> policy.policy(ReferrerPolicyHeaderWriter.ReferrerPolicy.NO_REFERRER))
-                .permissionsPolicy(permissions -> permissions.policy("camera=(), geolocation=(), microphone=()"))
+            .headers(headers -> {
+                headers.contentSecurityPolicy(csp -> csp.policyDirectives("default-src 'none'; frame-ancestors 'none'; base-uri 'none'"));
+                headers.referrerPolicy(policy -> policy.policy(ReferrerPolicyHeaderWriter.ReferrerPolicy.NO_REFERRER));
+                headers.permissionsPolicy(permissions -> permissions.policy("camera=(), geolocation=(), microphone=()"));
+                headers.httpStrictTransportSecurity(hsts -> hsts.includeSubDomains(true).maxAgeInSeconds(31536000));
+            })
+            .exceptionHandling(exceptions -> exceptions
+                .authenticationEntryPoint((request, response, ex) ->
+                    writeSecurityError(response, HttpServletResponse.SC_UNAUTHORIZED, "Autenticacao necessaria."))
+                .accessDeniedHandler((request, response, ex) ->
+                    writeSecurityError(response, HttpServletResponse.SC_FORBIDDEN, "Acesso negado."))
             )
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
@@ -69,6 +83,7 @@ public class SecurityConfig {
                 .anyRequest().authenticated()
             )
             .authenticationProvider(authenticationProvider())
+            .addFilterBefore(browserRequestGuardFilter, UsernamePasswordAuthenticationFilter.class)
             .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
             .build();
     }
@@ -94,14 +109,24 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(Arrays.stream(allowedOrigins.split(",")).map(String::trim).toList());
+        config.setAllowedOrigins(Arrays.stream(allowedOrigins.split(",")).map(String::trim).filter(origin -> !origin.isBlank()).toList());
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type", "X-Correlation-Id", "X-Requested-With"));
         config.setExposedHeaders(Arrays.asList("Content-Disposition", "X-Correlation-Id"));
         config.setAllowCredentials(true);
+        config.setMaxAge(3600L);
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", config);
         return source;
+    }
+
+    private void writeSecurityError(HttpServletResponse response, int status, String message) throws java.io.IOException {
+        response.setStatus(status);
+        response.setContentType(MediaType.APPLICATION_JSON_VALUE);
+        response.setCharacterEncoding(StandardCharsets.UTF_8.name());
+        response.getWriter().write("""
+            {"timestamp":"%s","status":%d,"message":"%s"}
+            """.formatted(Instant.now(), status, message));
     }
 }

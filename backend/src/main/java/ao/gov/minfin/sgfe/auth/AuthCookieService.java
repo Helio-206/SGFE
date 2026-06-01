@@ -20,8 +20,8 @@ public class AuthCookieService {
         @Value("${sgfe.security.cookie-secure:false}") boolean secureCookies,
         @Value("${sgfe.security.cookie-same-site:Lax}") String sameSite
     ) {
-        this.secureCookies = secureCookies;
-        this.sameSite = sameSite;
+        this.sameSite = normalizeSameSite(sameSite);
+        this.secureCookies = secureCookies || "None".equals(this.sameSite);
     }
 
     public void writeAuthenticationCookies(
@@ -69,5 +69,17 @@ public class AuthCookieService {
             .path(path)
             .maxAge(maxAgeSeconds)
             .build();
+    }
+
+    private String normalizeSameSite(String value) {
+        if (value == null || value.isBlank()) {
+            return "Lax";
+        }
+
+        return switch (value.trim().toLowerCase()) {
+            case "strict" -> "Strict";
+            case "none" -> "None";
+            default -> "Lax";
+        };
     }
 }

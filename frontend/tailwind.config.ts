@@ -16,6 +16,11 @@ const config: Config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        surface: {
+          DEFAULT: "hsl(var(--surface))",
+          strong: "hsl(var(--surface-strong))",
+          muted: "hsl(var(--surface-muted))"
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))"
@@ -35,7 +40,8 @@ const config: Config = {
           gold: "#C9A227",
           red: "#B11226",
           mist: "#EEF3F8",
-          line: "#D8DEE8"
+          line: "#D8DEE8",
+          teal: "#0E6B6B"
         }
       },
       borderRadius: {
@@ -44,8 +50,9 @@ const config: Config = {
         sm: "4px"
       },
       boxShadow: {
-        institutional: "0 16px 44px rgba(7, 27, 51, 0.10)",
-        line: "0 1px 0 rgba(17, 19, 24, 0.08)"
+        institutional: "0 18px 44px rgba(7, 27, 51, 0.10)",
+        line: "0 1px 0 rgba(17, 19, 24, 0.08)",
+        quiet: "0 12px 32px rgba(8, 26, 45, 0.07)"
       },
       fontFamily: {
         sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"]

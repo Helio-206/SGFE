@@ -19,6 +19,12 @@ public class JwtService {
         @Value("${sgfe.security.jwt-secret}") String secret,
         @Value("${sgfe.security.access-token-minutes}") long accessTokenMinutes
     ) {
+        if (secret == null || secret.getBytes(StandardCharsets.UTF_8).length < 32) {
+            throw new IllegalStateException("SGFE_JWT_SECRET deve ter pelo menos 32 bytes.");
+        }
+        if (accessTokenMinutes <= 0) {
+            throw new IllegalStateException("SGFE_ACCESS_TOKEN_MINUTES deve ser maior que zero.");
+        }
         this.secret = secret;
         this.accessTokenMinutes = accessTokenMinutes;
     }

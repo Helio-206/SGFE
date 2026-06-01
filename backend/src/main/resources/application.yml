@@ -42,7 +42,7 @@ sgfe:
     cookie-secure: ${SGFE_COOKIE_SECURE:false}
     cookie-same-site: ${SGFE_COOKIE_SAME_SITE:Lax}
   cors:
-    allowed-origins: ${SGFE_CORS_ORIGINS:http://localhost:3000,http://127.0.0.1:3000,http://localhost:39117,http://127.0.0.1:39117}
+    allowed-origins: ${SGFE_CORS_ORIGINS:http://localhost:3000,http://127.0.0.1:3000,http://localhost:3001,http://127.0.0.1:3001,http://localhost:3002,http://127.0.0.1:3002,http://localhost:39117,http://127.0.0.1:39117}
 
 management:
   endpoints:

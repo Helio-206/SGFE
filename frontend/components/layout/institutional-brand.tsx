@@ -14,7 +14,7 @@ export function InstitutionalBrand({ compact = false, inverted = false }: { comp
         unoptimized
         priority
       />
-      <div className={cn("min-w-0 border-l pl-3 leading-tight", compact && "hidden sm:block", inverted ? "border-white/15" : "border-border")}>
+      <div className={cn("min-w-0 border-l pl-3 leading-tight", compact && "hidden sm:block", inverted ? "border-white/20" : "border-border")}>
         <div className={cn("text-[11px] font-semibold uppercase text-institutional-gold", inverted && "text-institutional-gold")}>SGFE</div>
         <div className={cn(compact ? "text-sm font-bold" : "text-base font-bold", inverted ? "text-white" : "text-institutional-ink")}>
           Financas Publicas
