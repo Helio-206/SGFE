@@ -1,0 +1,4030 @@
+# Automation Log
+
+Registo de atualizacoes automaticas diarias.
+
+## 2026-05-10 00:55:27.261 UTC | run 20260510005527-1466592
+- Quantidade de atualizacoes realizadas: 30
+- Resumo do estado do projeto: Saudavel: projeto consistente e com sinais de manutencao ativa.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 15 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 3 scripts SQL na pasta database.
+  - [x] Foram localizados 3 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/relatorios/RelatorioService.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/auth/AuthCookieService.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/auth/SecurityConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/auth/JwtAuthenticationFilter.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/auth/AuthController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/auth/AuthService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/auth/login-page-client.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/layout/institutional-brand.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 01:00:08.537 UTC | run 20260510010008-2326
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 01:00:08.586 UTC | run 20260510010008-2338
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 01:00:08.628 UTC | run 20260510010008-2350
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 01:00:08.670 UTC | run 20260510010008-2362
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 01:00:08.712 UTC | run 20260510010008-2374
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 01:00:08.754 UTC | run 20260510010008-2386
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 01:00:08.797 UTC | run 20260510010008-2398
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 01:00:08.839 UTC | run 20260510010008-2410
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 01:00:08.880 UTC | run 20260510010008-2422
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 01:00:08.922 UTC | run 20260510010008-2435
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 01:01:21.242 UTC | run 20260510010121-2319
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 01:01:21.291 UTC | run 20260510010121-2331
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 01:01:21.337 UTC | run 20260510010121-2343
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 01:01:21.382 UTC | run 20260510010121-2355
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 05:44:58.244 UTC | run 20260510054458-2100
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 05:44:58.285 UTC | run 20260510054458-2112
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 05:44:58.323 UTC | run 20260510054458-2125
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 05:44:58.371 UTC | run 20260510054458-2137
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 05:44:58.410 UTC | run 20260510054458-2149
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 05:44:58.446 UTC | run 20260510054458-2161
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 05:44:58.484 UTC | run 20260510054458-2173
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 05:44:58.520 UTC | run 20260510054458-2185
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 05:44:58.556 UTC | run 20260510054458-2197
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-10 05:44:58.601 UTC | run 20260510054458-2209
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-11 06:07:25.105 UTC | run 20260511060725-2281
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-11 06:07:25.148 UTC | run 20260511060725-2293
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-11 06:07:25.187 UTC | run 20260511060725-2305
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-11 06:07:25.229 UTC | run 20260511060725-2317
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-11 06:07:25.266 UTC | run 20260511060725-2329
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-11 06:07:25.306 UTC | run 20260511060725-2341
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-11 06:07:25.347 UTC | run 20260511060725-2353
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-11 06:07:25.389 UTC | run 20260511060725-2365
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-11 06:07:25.428 UTC | run 20260511060725-2377
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-11 06:07:25.468 UTC | run 20260511060725-2389
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-12 05:47:00.831 UTC | run 20260512054700-2114
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-12 05:47:00.999 UTC | run 20260512054700-2127
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-12 05:47:01.123 UTC | run 20260512054701-2139
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-12 05:47:01.164 UTC | run 20260512054701-2151
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-12 05:47:01.206 UTC | run 20260512054701-2163
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-12 05:47:01.247 UTC | run 20260512054701-2175
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-12 05:47:01.424 UTC | run 20260512054701-2187
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-12 05:47:01.466 UTC | run 20260512054701-2199
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-12 05:47:01.545 UTC | run 20260512054701-2211
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-12 05:47:01.591 UTC | run 20260512054701-2223
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-13 05:56:27.755 UTC | run 20260513055627-2320
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-13 05:56:27.808 UTC | run 20260513055627-2332
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-13 05:56:27.855 UTC | run 20260513055627-2344
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-13 05:56:27.903 UTC | run 20260513055627-2356
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-13 05:56:27.950 UTC | run 20260513055627-2368
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-13 05:56:27.996 UTC | run 20260513055627-2380
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-13 05:56:28.048 UTC | run 20260513055628-2392
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-13 05:56:28.097 UTC | run 20260513055628-2405
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-13 05:56:28.145 UTC | run 20260513055628-2417
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-13 05:56:28.193 UTC | run 20260513055628-2429
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-14 05:55:11.063 UTC | run 20260514055511-2300
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-14 05:55:11.116 UTC | run 20260514055511-2312
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-14 05:55:11.163 UTC | run 20260514055511-2324
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-14 05:55:11.209 UTC | run 20260514055511-2336
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-14 05:55:11.261 UTC | run 20260514055511-2348
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-14 05:55:11.306 UTC | run 20260514055511-2360
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-14 05:55:11.356 UTC | run 20260514055511-2375
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-14 05:55:11.401 UTC | run 20260514055511-2387
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-14 05:55:11.446 UTC | run 20260514055511-2399
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-14 05:55:11.492 UTC | run 20260514055511-2411
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-15 06:02:23.354 UTC | run 20260515060223-2328
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-15 06:02:23.407 UTC | run 20260515060223-2340
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-15 06:02:23.454 UTC | run 20260515060223-2352
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-15 06:02:23.503 UTC | run 20260515060223-2364
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-15 06:02:23.550 UTC | run 20260515060223-2376
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-15 06:02:23.597 UTC | run 20260515060223-2388
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-15 06:02:23.646 UTC | run 20260515060223-2400
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-15 06:02:23.692 UTC | run 20260515060223-2412
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-15 06:02:23.736 UTC | run 20260515060223-2424
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-15 06:02:23.786 UTC | run 20260515060223-2436
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-16 05:34:08.384 UTC | run 20260516053408-2315
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-16 05:34:08.439 UTC | run 20260516053408-2327
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-16 05:34:08.487 UTC | run 20260516053408-2339
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-16 05:34:08.535 UTC | run 20260516053408-2351
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-16 05:34:08.584 UTC | run 20260516053408-2363
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-16 05:34:08.634 UTC | run 20260516053408-2375
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-16 05:34:08.682 UTC | run 20260516053408-2387
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-16 05:34:08.733 UTC | run 20260516053408-2400
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-16 05:34:08.781 UTC | run 20260516053408-2412
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-16 05:34:08.833 UTC | run 20260516053408-2424
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-17 05:55:52.595 UTC | run 20260517055552-2305
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-17 05:55:52.651 UTC | run 20260517055552-2317
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-17 05:55:52.701 UTC | run 20260517055552-2329
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-17 05:55:52.751 UTC | run 20260517055552-2341
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-17 05:55:52.800 UTC | run 20260517055552-2353
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-17 05:55:52.850 UTC | run 20260517055552-2365
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-17 05:55:52.900 UTC | run 20260517055552-2378
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-17 05:55:52.951 UTC | run 20260517055552-2390
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-17 05:55:53.001 UTC | run 20260517055553-2402
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-17 05:55:53.053 UTC | run 20260517055553-2414
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-18 06:23:28.101 UTC | run 20260518062328-2244
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-18 06:23:28.155 UTC | run 20260518062328-2256
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-18 06:23:28.196 UTC | run 20260518062328-2268
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-18 06:23:28.239 UTC | run 20260518062328-2280
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-18 06:23:28.282 UTC | run 20260518062328-2292
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-18 06:23:28.326 UTC | run 20260518062328-2304
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-18 06:23:28.370 UTC | run 20260518062328-2316
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-18 06:23:28.416 UTC | run 20260518062328-2328
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-18 06:23:28.465 UTC | run 20260518062328-2340
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-18 06:23:28.508 UTC | run 20260518062328-2352
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-19 06:18:51.489 UTC | run 20260519061851-2312
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-19 06:18:51.546 UTC | run 20260519061851-2324
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-19 06:18:51.595 UTC | run 20260519061851-2336
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-19 06:18:51.645 UTC | run 20260519061851-2349
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-19 06:18:51.694 UTC | run 20260519061851-2361
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-19 06:18:51.743 UTC | run 20260519061851-2373
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-19 06:18:51.793 UTC | run 20260519061851-2385
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-19 06:18:51.843 UTC | run 20260519061851-2397
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-19 06:18:51.896 UTC | run 20260519061851-2409
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+
+## 2026-05-19 06:18:51.951 UTC | run 20260519061851-2421
+- Quantidade de atualizacoes realizadas: 29
+- Resumo do estado do projeto: Estavel: estrutura organizada, com oportunidade de ampliar evidencias de testes.
+- Itens verificados e atualizados:
+  - [x] Repositorio SGFE analisado com consistencia estrutural basica.
+  - [x] Foram validadas 12 entradas no nivel raiz do projeto.
+  - [x] Backend possui 64 ficheiros Java em src/main.
+  - [x] Backend possui 3 ficheiros de teste em src/test.
+  - [x] Frontend possui 15 paginas baseadas em page.tsx.
+  - [x] Frontend possui 20 componentes TSX reutilizaveis.
+  - [x] Foram localizados 4 documentos Markdown na pasta docs.
+  - [x] Foram localizados 2 scripts SQL na pasta database.
+  - [x] Foram localizados 0 relatorios XML em surefire-reports.
+  - [x] Foram localizados 1 workflows YAML em .github/workflows.
+  - [x] Arquivo critico confirmado: README.md.
+  - [x] Arquivo critico confirmado: LICENSE.
+  - [x] Arquivo critico confirmado: backend/pom.xml.
+  - [x] Arquivo critico confirmado: frontend/package.json.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/BootstrapTestDataConfig.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/User.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserController.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserDtos.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserRepository.java.
+  - [x] Inspecionado ficheiro backend: backend/src/main/java/ao/gov/minfin/sgfe/users/UserService.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/receitas/RupeServiceTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/common/EstadoDespesaTest.java.
+  - [x] Inspecionado ficheiro de teste: backend/src/test/java/ao/gov/minfin/sgfe/auth/JwtServiceTest.java.
+  - [x] Inspecionada pagina frontend: frontend/app/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/relatorios/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/recuperar-senha/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/perfil/page.tsx.
+  - [x] Inspecionada pagina frontend: frontend/app/login/page.tsx.
+  - [x] Inspecionado componente frontend: frontend/components/ui/button.tsx.
+- Proxima acao sugerida: Expandir cobertura de testes unitarios no backend para cenarios criticos.
+

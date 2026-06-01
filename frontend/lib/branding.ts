@@ -1,0 +1,1 @@
+export const MINFIN_LOGO_URL = process.env.NEXT_PUBLIC_MINFIN_LOGO_URL ?? "https://www.minfin.gov.ao/assets/img/log.png";

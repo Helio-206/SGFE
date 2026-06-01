@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 208 28% 94%;
+  --foreground: 222 18% 12%;
+  --surface: 205 34% 97%;
+  --surface-strong: 0 0% 100%;
+  --surface-muted: 210 25% 92%;
+  --primary: 211 67% 21%;
+  --primary-foreground: 0 0% 100%;
+  --muted: 210 22% 90%;
+  --muted-foreground: 218 13% 36%;
+  --destructive: 352 82% 38%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 214 19% 82%;
+  --input: 214 19% 82%;
+  --ring: 43 67% 46%;
+  --font-display: "Inter", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, #edf3f6 0%, #f7f8f4 46%, #eef3f6 100%);
+  color: hsl(var(--foreground));
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0;
+}
+
+.institutional-hero {
+  background:
+    linear-gradient(135deg, #071b33 0%, #0b2c4c 48%, #0f5c61 100%);
+}
+
+.fine-grid {
+  background-image:
+    linear-gradient(rgba(18, 53, 91, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 53, 91, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-institutional-gold focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+}
+
+::selection {
+  background: rgba(201, 162, 39, 0.28);
+  color: hsl(var(--foreground));
+}
+
+.partner-seal {
+  display: inline-flex;
+  min-height: 5.25rem;
+  min-width: 5.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(7, 27, 51, 0.96), rgba(15, 58, 97, 0.94));
+  color: #f6f1e2;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(7, 27, 51, 0.16);
+}
